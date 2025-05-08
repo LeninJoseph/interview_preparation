@@ -1,1 +1,10 @@
 site_name: Interview Preparation
+theme:
+  name: material
+  features:
+    - navigation.tabs
+  palette:
+    primary: indigo
+    accent: indigo
+  navigation:
+    location: left
