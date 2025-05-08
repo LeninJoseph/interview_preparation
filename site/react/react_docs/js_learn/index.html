@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/react/react_docs/1_js_learn/">
+        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/react/react_docs/js_learn/">
       
       
+        <link rel="prev" href="../../">
+      
+      
+        <link rel="next" href="../react_learn/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>JavaScript Basics - Interview Preparation</title>
+        <title>Learn JS - Interview Preparation</title>
       
     
     
@@ -102,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              JavaScript Basics
+              Learn JS
             
           </span>
         </div>
@@ -192,10 +196,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../" class="md-tabs__link">
           
   
@@ -267,24 +273,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -297,7 +308,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             React
@@ -317,6 +328,365 @@
   
   <span class="md-ellipsis">
     Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Learn JS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Learn JS
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-window-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the window object?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-document-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the document object?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-variable-scope-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a variable scope in JavaScript?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-closure" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a closure?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-coercion-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is coercion in JavaScript?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-temporal-dead-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the temporal dead zone?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-hoisting-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is hoisting in JavaScript?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-difference-between-function-expression-and-function-declaration" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the difference between function expression and function declaration?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-callback" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a callback?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-settimeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is setTimeout?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-event-loop-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the event loop in JavaScript?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-difference-between-microtask-and-macrotask-callback-queues" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the difference between microtask and macrotask (callback) queues?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-does-a-promise-run-before-settimeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why does a Promise run before setTimeout?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-output-of-this-tricky-async-code-practice-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the output of this tricky async code? (🆕 Practice question)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-promise" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a promise?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-callback-hell" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is callback hell?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-reduce-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is .reduce() in JavaScript?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-map-and-filter-how-are-they-different" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are .map() and .filter()? How are they different?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-difference-between-map-and-foreach" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the difference between .map() and .forEach()?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-template-literals" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are template literals?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-difference-between-and" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the difference between == and ===?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-currying-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is currying in JavaScript?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-copy-using-recursion-how-to-implement-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deep copy using recursion – how to implement it?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-manipulation-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      String manipulation in JavaScript
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-void-in-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is void in JavaScript?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../react_learn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Learn React
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical_topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Topics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../behavioral_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Behaviral Topics
     
   </span>
   

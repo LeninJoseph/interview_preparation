@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/react/react_docs/3_technical_topics/">
+        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/react/react_docs/technical_topics/">
       
       
+        <link rel="prev" href="../react_learn/">
+      
+      
+        <link rel="next" href="../behavioral_questions/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>React JS Technical Topics - Interview Preparation</title>
+        <title>Technical Topics - Interview Preparation</title>
       
     
     
@@ -102,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              React JS Technical Topics
+              Technical Topics
             
           </span>
         </div>
@@ -192,10 +196,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../" class="md-tabs__link">
           
   
@@ -267,24 +273,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -297,7 +308,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             React
@@ -317,6 +328,365 @@
   
   <span class="md-ellipsis">
     Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js_learn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Learn JS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../react_learn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Learn React
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Technical Topics
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Topics
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is React?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-what-are-components-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. What are Components in React?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-what-is-jsx" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. What is JSX?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-what-is-state-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. What is State in React?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-what-are-props-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. What are Props in React?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-what-is-the-virtual-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. What is the Virtual DOM?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-what-are-react-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. What are React Hooks?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-what-is-redux" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. What is Redux?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-what-is-react-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. What is React Router?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-what-is-context-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. What is Context API?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-what-is-the-difference-between-class-and-functional-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. What is the difference between Class and Functional Components?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-what-is-react-fiber" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. What is React Fiber?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-what-is-the-use-of-useeffect-hook" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. What is the use of useEffect Hook?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-what-are-higher-order-components-hoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. What are Higher-Order Components (HOC)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-what-is-react-strict-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. What is React Strict Mode?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-what-is-lazy-loading-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. What is Lazy Loading in React?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-what-is-the-difference-between-controlled-and-uncontrolled-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. What is the difference between Controlled and Uncontrolled Components?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-what-is-reacts-key-prop" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. What is React's key Prop?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-what-is-server-side-rendering-ssr" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. What is Server-Side Rendering (SSR)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-what-is-the-difference-between-usestate-and-usereducer" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. What is the difference between useState and useReducer?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-what-is-reactmemo" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. What is React.memo?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-what-is-the-purpose-of-reactfragment" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. What is the purpose of React.Fragment?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-what-is-the-difference-between-useeffect-and-uselayouteffect" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. What is the difference between useEffect and useLayoutEffect?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-what-is-prop-drilling" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. What is Prop Drilling?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-what-is-reacts-concurrent-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      25. What is React's Concurrent Mode?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../behavioral_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Behaviral Topics
     
   </span>
   

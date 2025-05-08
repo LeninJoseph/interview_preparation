@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/react/react_docs/2_react_learn/">
+        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/react/react_docs/react_learn/">
       
       
+        <link rel="prev" href="../js_learn/">
+      
+      
+        <link rel="next" href="../technical_topics/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>React Basics - Interview Preparation</title>
+        <title>Learn React - Interview Preparation</title>
       
     
     
@@ -102,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              React Basics
+              Learn React
             
           </span>
         </div>
@@ -192,10 +196,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../" class="md-tabs__link">
           
   
@@ -267,24 +273,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -297,7 +308,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             React
@@ -317,6 +328,257 @@
   
   <span class="md-ellipsis">
     Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js_learn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Learn JS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Learn React
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Learn React
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is React?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-main-features-and-advantages-of-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the main features and advantages of React?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-jsx" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is JSX?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-is-jsx-different-from-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      How is JSX different from HTML?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-virtual-dom-how-does-it-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the Virtual DOM? How does it work?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-difference-between-a-functional-and-class-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the difference between a functional and class component?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-props-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are props in React?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-is-state-different-from-props" class="md-nav__link">
+    <span class="md-ellipsis">
+      How is state different from props?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-state-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is state in React?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-you-use-the-usestate-hook" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do you use the useState hook?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explain-the-concept-of-one-way-data-binding-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explain the concept of one-way data binding in React.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-keys-in-react-why-are-they-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are keys in React? Why are they important?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-purpose-of-render-in-class-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the purpose of render() in class components?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical_topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Topics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../behavioral_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Behaviral Topics
     
   </span>
   

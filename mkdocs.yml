@@ -18,5 +18,9 @@ nav:
       - Learn React: react/react_docs/react_learn.md
       - Technical Topics: react/react_docs/technical_topics.md
       - Behaviral Topics: react/react_docs/behavioral_questions.md
+  - Python:
+      - Introduction: python/index.md
+      - Python Basics: python/python_docs/basic_concepts.md
+      - OOPs: python/python_docs/oops.md
 plugins:
   - search
