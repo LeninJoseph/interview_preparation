@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/design_pattern/real_time_patterns/dependancy_injection/">
+        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/design_patterns/real_time_patterns/rule_engine_pattern/">
       
       
+        <link rel="prev" href="../factory_pattern/">
+      
+      
+        <link rel="next" href="../template_method_pattern/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Dependency Injection (DI) (Autowired) - Interview Preparation</title>
+        <title>Rule Engine Pattern - Interview Preparation</title>
       
     
     
@@ -68,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dependency-injection-di-autowired" class="md-skip">
+        <a href="#rule-engine-pattern" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dependency Injection (DI) (Autowired)
+              Rule Engine Pattern
             
           </span>
         </div>
@@ -221,6 +225,28 @@
   
   
   Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Design Patterns
 
         </a>
       </li>
@@ -563,6 +589,381 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Patterns
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Design Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Real Time Examples
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Real Time Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api_gateway_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Gateway Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dependancy_injection_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dependancy Injection Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factory_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Factory Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Rule Engine Pattern
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rule Engine Pattern
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template_method_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template Method Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transformer_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transformer Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resolver_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resolver Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -599,9 +1000,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#types-of-dependency-injection" class="md-nav__link">
+  <a href="#benefits" class="md-nav__link">
     <span class="md-ellipsis">
-      Types of Dependency Injection
+      Benefits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
     </span>
   </a>
   
@@ -623,109 +1051,74 @@
 
 
 
-<h1 id="dependency-injection-di-autowired">Dependency Injection (DI) (Autowired)</h1>
-<p>Dependency Injection (DI) is a design pattern used in software development to achieve Inversion of Control (IoC) between classes and their dependencies. It allows a class to receive its dependencies from an external source rather than creating them internally, promoting loose coupling and easier testing.</p>
+<h1 id="rule-engine-pattern">Rule Engine Pattern</h1>
+<p>The Rule Engine Pattern is a design pattern used to define, manage, and execute business rules or logic independently of the application code. It provides a flexible and scalable way to handle complex decision-making processes by separating the rules from the core application logic.</p>
 <h2 id="key-concepts">Key Concepts</h2>
 <ol>
-<li><strong>Dependency</strong>: An object that a class requires to function.</li>
-<li><strong>Injection</strong>: The process of providing the dependency to a class.</li>
+<li><strong>Rules</strong>: Individual pieces of logic or conditions that define specific behaviors or decisions.</li>
+<li><strong>Rule Engine</strong>: A component responsible for evaluating and executing the rules.</li>
+<li><strong>Facts</strong>: Data or inputs provided to the rule engine for evaluation.</li>
+<li><strong>Actions</strong>: Operations performed when a rule is satisfied.</li>
 </ol>
-<h2 id="types-of-dependency-injection">Types of Dependency Injection</h2>
-<ol>
-<li>
-<p><strong>Constructor Injection</strong>: Dependencies are provided through a class constructor.
-    ```python
-    class Repository:
-        def get_data(self):
-            return "Data from Repository"</p>
-<p>class Service:
-    def <strong>init</strong>(self, repository: Repository):
-        self.repository = repository</p>
-<pre><code>def serve(self):
-    return self.repository.get_data()
-</code></pre>
-<h1 id="usage">Usage</h1>
-<p>repo = Repository()
-service = Service(repo)
-print(service.serve())
-```</p>
-</li>
-<li>
-<p><strong>Setter Injection</strong>: Dependencies are provided through setter methods.
-    ```python
-    class Repository:
-        def get_data(self):
-            return "Data from Repository"</p>
-<p>class Service:
-    def <strong>init</strong>(self):
-        self.repository = None</p>
-<pre><code>def set_repository(self, repository: Repository):
-    self.repository = repository
-
-def serve(self):
-    return self.repository.get_data()
-</code></pre>
-<h1 id="usage_1">Usage</h1>
-<p>repo = Repository()
-service = Service()
-service.set_repository(repo)
-print(service.serve())
-```</p>
-</li>
-<li>
-<p><strong>Interface Injection</strong>: Dependencies are provided through an interface method.
-    ```python
-    from abc import ABC, abstractmethod</p>
-<p>class DependencyInjector(ABC):
-    @abstractmethod
-    def inject(self, service):
-        pass</p>
-<p>class Repository:
-    def get_data(self):
-        return "Data from Repository"</p>
-<p>class Service:
-    def <strong>init</strong>(self):
-        self.repository = None</p>
-<pre><code>def serve(self):
-    return self.repository.get_data()
-</code></pre>
-<p>class MyInjector(DependencyInjector):
-    def inject(self, service: Service):
-        service.repository = Repository()</p>
-<h1 id="usage_2">Usage</h1>
-<p>service = Service()
-injector = MyInjector()
-injector.inject(service)
-print(service.serve())
-```</p>
-</li>
-</ol>
-<h2 id="benefits-of-dependency-injection">Benefits of Dependency Injection</h2>
+<h2 id="benefits">Benefits</h2>
 <ul>
-<li><strong>Loose Coupling</strong>: Classes are not tightly bound to their dependencies.</li>
-<li><strong>Improved Testability</strong>: Dependencies can be mocked or stubbed for unit testing.</li>
-<li><strong>Flexibility</strong>: Easier to swap implementations of dependencies.</li>
-<li><strong>Maintainability</strong>: Clear separation of concerns.</li>
+<li><strong>Separation of Concerns</strong>: Keeps business rules separate from application logic, making the codebase cleaner and easier to maintain.</li>
+<li><strong>Flexibility</strong>: Rules can be added, modified, or removed without changing the core application code.</li>
+<li><strong>Reusability</strong>: Rules can be reused across different parts of the application or even in other projects.</li>
+<li><strong>Scalability</strong>: Handles complex decision-making processes efficiently.</li>
 </ul>
-<h2 id="example-in-python-frameworks">Example in Python Frameworks</h2>
-<p>Frameworks like Flask and FastAPI support DI through extensions or built-in mechanisms. Example in FastAPI:</p>
-<pre><code class="language-python">from fastapi import Depends, FastAPI
+<h2 id="implementation-steps">Implementation Steps</h2>
+<ol>
+<li><strong>Define Rules</strong>: Create rules as independent entities, often using a declarative format.</li>
+<li><strong>Load Rules</strong>: Load the rules into the rule engine, either from a database, file, or in-memory configuration.</li>
+<li><strong>Provide Facts</strong>: Supply the necessary data (facts) to the rule engine.</li>
+<li><strong>Evaluate Rules</strong>: The rule engine evaluates the rules against the provided facts.</li>
+<li><strong>Execute Actions</strong>: Perform the actions associated with the satisfied rules.</li>
+</ol>
+<h2 id="example">Example</h2>
+<pre><code class="language-python">class Rule:
+    def __init__(self, condition, action):
+        self.condition = condition
+        self.action = action
 
-app = FastAPI()
+    def evaluate(self, facts):
+        if self.condition(facts):
+            self.action(facts)
 
-class Repository:
-    def get_data(self):
-        return &quot;Data from Repository&quot;
+class RuleEngine:
+    def __init__(self):
+        self.rules = []
 
-def get_repository():
-    return Repository()
+    def add_rule(self, rule):
+        self.rules.append(rule)
 
-@app.get(&quot;/&quot;)
-def read_root(repository: Repository = Depends(get_repository)):
-    return {&quot;data&quot;: repository.get_data()}
+    def execute(self, facts):
+        for rule in self.rules:
+            rule.evaluate(facts)
+
+# Example usage
+def is_adult(facts):
+    return facts.get(&quot;age&quot;, 0) &gt;= 18
+
+def grant_access(facts):
+    print(&quot;Access granted!&quot;)
+
+rule = Rule(is_adult, grant_access)
+engine = RuleEngine()
+engine.add_rule(rule)
+
+facts = {&quot;age&quot;: 20}
+engine.execute(facts)
 </code></pre>
-<h2 id="conclusion">Conclusion</h2>
-<p>Dependency Injection is a powerful design pattern that simplifies code maintenance, testing, and scalability by decoupling components and managing dependencies effectively.</p>
+<h2 id="use-cases">Use Cases</h2>
+<ul>
+<li>Fraud detection systems</li>
+<li>Recommendation engines</li>
+<li>Workflow automation</li>
+<li>Access control systems</li>
+<li>Dynamic pricing models</li>
+</ul>
+<p>The Rule Engine Pattern is a powerful tool for building systems that require dynamic and adaptable business logic.</p>
 
 
 

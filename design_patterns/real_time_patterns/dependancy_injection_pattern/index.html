@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/design_pattern/real_time_patterns/transformer_pattern/">
+        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/design_patterns/real_time_patterns/dependancy_injection_pattern/">
       
       
+        <link rel="prev" href="../api_gateway_pattern/">
+      
+      
+        <link rel="next" href="../factory_pattern/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Transformer Pattern - Interview Preparation</title>
+        <title>Dependancy Injection Pattern - Interview Preparation</title>
       
     
     
@@ -68,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#transformer-pattern" class="md-skip">
+        <a href="#dependency-injection-di-autowired" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Transformer Pattern
+              Dependancy Injection Pattern
             
           </span>
         </div>
@@ -221,6 +225,28 @@
   
   
   Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Design Patterns
 
         </a>
       </li>
@@ -563,6 +589,354 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Patterns
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Design Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Real Time Examples
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Real Time Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api_gateway_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Gateway Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Dependancy Injection Pattern
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dependancy Injection Pattern
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-dependency-injection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Dependency Injection
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factory_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Factory Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rule_engine_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rule Engine Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template_method_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template Method Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transformer_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transformer Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resolver_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resolver Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -599,51 +973,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#structure" class="md-nav__link">
+  <a href="#types-of-dependency-injection" class="md-nav__link">
     <span class="md-ellipsis">
-      Structure
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-in-python" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example in Python
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-in-nodejs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example in Node.js
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#advantages" class="md-nav__link">
-    <span class="md-ellipsis">
-      Advantages
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Use Cases
+      Types of Dependency Injection
     </span>
   </a>
   
@@ -665,98 +997,109 @@
 
 
 
-<h1 id="transformer-pattern">Transformer Pattern</h1>
-<p>The Transformer Pattern is a design pattern used to convert data from one format or structure to another. It is commonly applied in scenarios where data transformation is required between different layers of an application, such as converting domain models to DTOs (Data Transfer Objects) or mapping API responses to internal data structures.</p>
+<h1 id="dependency-injection-di-autowired">Dependency Injection (DI) (Autowired)</h1>
+<p>Dependency Injection (DI) is a design pattern used in software development to achieve Inversion of Control (IoC) between classes and their dependencies. It allows a class to receive its dependencies from an external source rather than creating them internally, promoting loose coupling and easier testing.</p>
 <h2 id="key-concepts">Key Concepts</h2>
 <ol>
-<li><strong>Input and Output</strong>: The pattern takes an input object and transforms it into an output object of a different type or structure.</li>
-<li><strong>Separation of Concerns</strong>: By isolating transformation logic, the pattern promotes cleaner and more maintainable code.</li>
-<li><strong>Reusability</strong>: Transformation logic can be reused across different parts of the application.</li>
+<li><strong>Dependency</strong>: An object that a class requires to function.</li>
+<li><strong>Injection</strong>: The process of providing the dependency to a class.</li>
 </ol>
-<h2 id="structure">Structure</h2>
-<p>The Transformer Pattern typically involves the following components:</p>
-<ul>
-<li><strong>Transformer Interface</strong>: Defines a contract for transformation.</li>
-<li><strong>Concrete Transformer</strong>: Implements the transformation logic.</li>
-<li><strong>Input and Output Models</strong>: Represent the data before and after transformation.</li>
-</ul>
-<h3 id="example-in-python">Example in Python</h3>
-<pre><code class="language-python">from typing import TypeVar, Generic
-
-# Define generic types for input and output
-I = TypeVar('I')
-O = TypeVar('O')
-
-# Transformer Interface
-class Transformer(Generic[I, O]):
-    def transform(self, input: I) -&gt; O:
-        raise NotImplementedError(&quot;Transform method must be implemented&quot;)
-
-# Concrete Transformer
-class UserToUserDTOTransformer(Transformer[dict, dict]):
-    def transform(self, user: dict) -&gt; dict:
-        return {
-            &quot;id&quot;: user[&quot;id&quot;],
-            &quot;name&quot;: user[&quot;name&quot;],
-            &quot;email&quot;: user[&quot;email&quot;]
-        }
-
-# Input Model
-user = {
-    &quot;id&quot;: 1,
-    &quot;name&quot;: &quot;John Doe&quot;,
-    &quot;email&quot;: &quot;john.doe@example.com&quot;
-}
-
-# Usage
-transformer = UserToUserDTOTransformer()
-user_dto = transformer.transform(user)
-print(user_dto)
+<h2 id="types-of-dependency-injection">Types of Dependency Injection</h2>
+<ol>
+<li>
+<p><strong>Constructor Injection</strong>: Dependencies are provided through a class constructor.
+    ```python
+    class Repository:
+        def get_data(self):
+            return "Data from Repository"</p>
+<p>class Service:
+    def <strong>init</strong>(self, repository: Repository):
+        self.repository = repository</p>
+<pre><code>def serve(self):
+    return self.repository.get_data()
 </code></pre>
-<h3 id="example-in-nodejs">Example in Node.js</h3>
-<pre><code class="language-javascript">// Transformer Interface
-class Transformer {
-    transform(input) {
-        throw new Error(&quot;Transform method must be implemented&quot;);
-    }
-}
+<h1 id="usage">Usage</h1>
+<p>repo = Repository()
+service = Service(repo)
+print(service.serve())
+```</p>
+</li>
+<li>
+<p><strong>Setter Injection</strong>: Dependencies are provided through setter methods.
+    ```python
+    class Repository:
+        def get_data(self):
+            return "Data from Repository"</p>
+<p>class Service:
+    def <strong>init</strong>(self):
+        self.repository = None</p>
+<pre><code>def set_repository(self, repository: Repository):
+    self.repository = repository
 
-// Concrete Transformer
-class UserToUserDTOTransformer extends Transformer {
-    transform(user) {
-        return {
-            id: user.id,
-            name: user.name,
-            email: user.email
-        };
-    }
-}
-
-// Input Model
-const user = {
-    id: 1,
-    name: &quot;John Doe&quot;,
-    email: &quot;john.doe@example.com&quot;
-};
-
-// Usage
-const transformer = new UserToUserDTOTransformer();
-const userDTO = transformer.transform(user);
-console.log(userDTO);
+def serve(self):
+    return self.repository.get_data()
 </code></pre>
-<h2 id="advantages">Advantages</h2>
+<h1 id="usage_1">Usage</h1>
+<p>repo = Repository()
+service = Service()
+service.set_repository(repo)
+print(service.serve())
+```</p>
+</li>
+<li>
+<p><strong>Interface Injection</strong>: Dependencies are provided through an interface method.
+    ```python
+    from abc import ABC, abstractmethod</p>
+<p>class DependencyInjector(ABC):
+    @abstractmethod
+    def inject(self, service):
+        pass</p>
+<p>class Repository:
+    def get_data(self):
+        return "Data from Repository"</p>
+<p>class Service:
+    def <strong>init</strong>(self):
+        self.repository = None</p>
+<pre><code>def serve(self):
+    return self.repository.get_data()
+</code></pre>
+<p>class MyInjector(DependencyInjector):
+    def inject(self, service: Service):
+        service.repository = Repository()</p>
+<h1 id="usage_2">Usage</h1>
+<p>service = Service()
+injector = MyInjector()
+injector.inject(service)
+print(service.serve())
+```</p>
+</li>
+</ol>
+<h2 id="benefits-of-dependency-injection">Benefits of Dependency Injection</h2>
 <ul>
-<li>Simplifies data transformation logic.</li>
-<li>Improves code readability and maintainability.</li>
-<li>Encourages reusability of transformation logic.</li>
+<li><strong>Loose Coupling</strong>: Classes are not tightly bound to their dependencies.</li>
+<li><strong>Improved Testability</strong>: Dependencies can be mocked or stubbed for unit testing.</li>
+<li><strong>Flexibility</strong>: Easier to swap implementations of dependencies.</li>
+<li><strong>Maintainability</strong>: Clear separation of concerns.</li>
 </ul>
-<h2 id="use-cases">Use Cases</h2>
-<ul>
-<li>Mapping database entities to API responses.</li>
-<li>Converting between different data formats (e.g., JSON to XML).</li>
-<li>Adapting legacy systems to modern APIs.</li>
-</ul>
-<p>The Transformer Pattern is a powerful tool for managing data transformations in a clean and structured way.</p>
+<h2 id="example-in-python-frameworks">Example in Python Frameworks</h2>
+<p>Frameworks like Flask and FastAPI support DI through extensions or built-in mechanisms. Example in FastAPI:</p>
+<pre><code class="language-python">from fastapi import Depends, FastAPI
+
+app = FastAPI()
+
+class Repository:
+    def get_data(self):
+        return &quot;Data from Repository&quot;
+
+def get_repository():
+    return Repository()
+
+@app.get(&quot;/&quot;)
+def read_root(repository: Repository = Depends(get_repository)):
+    return {&quot;data&quot;: repository.get_data()}
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>Dependency Injection is a powerful design pattern that simplifies code maintenance, testing, and scalability by decoupling components and managing dependencies effectively.</p>
 
 
 
