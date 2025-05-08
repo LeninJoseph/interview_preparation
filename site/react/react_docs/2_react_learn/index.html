@@ -1,0 +1,781 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/react/react_docs/2_react_learn/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>React Basics - Interview Preparation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#react-basics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Interview Preparation" class="md-header__button md-logo" aria-label="Interview Preparation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Interview Preparation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              React Basics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  React
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Interview Preparation" class="md-nav__button md-logo" aria-label="Interview Preparation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Interview Preparation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    React
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            React
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is React?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-main-features-and-advantages-of-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the main features and advantages of React?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-jsx" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is JSX?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-is-jsx-different-from-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      How is JSX different from HTML?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-virtual-dom-how-does-it-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the Virtual DOM? How does it work?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-difference-between-a-functional-and-class-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the difference between a functional and class component?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-props-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are props in React?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-is-state-different-from-props" class="md-nav__link">
+    <span class="md-ellipsis">
+      How is state different from props?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-state-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is state in React?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-you-use-the-usestate-hook" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do you use the useState hook?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explain-the-concept-of-one-way-data-binding-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explain the concept of one-way data binding in React.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-keys-in-react-why-are-they-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are keys in React? Why are they important?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-purpose-of-render-in-class-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the purpose of render() in class components?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="react-basics">React Basics</h1>
+<h3 id="what-is-react">What is React?</h3>
+<p>React is a JavaScript library for building user interfaces.</p>
+<h3 id="what-are-the-main-features-and-advantages-of-react">What are the main features and advantages of React?</h3>
+<ul>
+<li>Component-based architecture</li>
+<li>Virtual DOM for performance</li>
+<li>One-way data binding</li>
+<li>Reusable components</li>
+</ul>
+<h3 id="what-is-jsx">What is JSX?</h3>
+<p>JSX is a syntax extension for JavaScript that allows writing HTML-like code in React.</p>
+<h3 id="how-is-jsx-different-from-html">How is JSX different from HTML?</h3>
+<p>JSX uses camelCase for attributes and allows embedding JavaScript expressions.</p>
+<h3 id="what-is-the-virtual-dom-how-does-it-work">What is the Virtual DOM? How does it work?</h3>
+<p>The Virtual DOM is a lightweight representation of the real DOM. React updates the Virtual DOM and efficiently syncs changes with the real DOM.</p>
+<h3 id="what-is-the-difference-between-a-functional-and-class-component">What is the difference between a functional and class component?</h3>
+<ul>
+<li><strong>Functional Component</strong>: A simple function that returns JSX.</li>
+<li><strong>Class Component</strong>: A class that extends <code>React.Component</code> and includes lifecycle methods.</li>
+</ul>
+<h3 id="what-are-props-in-react">What are props in React?</h3>
+<p>Props are inputs to components, passed as attributes.</p>
+<h3 id="how-is-state-different-from-props">How is state different from props?</h3>
+<ul>
+<li><strong>State</strong>: Managed within the component.</li>
+<li><strong>Props</strong>: Passed from parent to child.</li>
+</ul>
+<h3 id="what-is-state-in-react">What is state in React?</h3>
+<p>State is an object that holds data that can change over time.</p>
+<h3 id="how-do-you-use-the-usestate-hook">How do you use the useState hook?</h3>
+<pre><code class="language-javascript">import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  return &lt;button onClick={() =&gt; setCount(count + 1)}&gt;{count}&lt;/button&gt;;
+}
+</code></pre>
+<h3 id="explain-the-concept-of-one-way-data-binding-in-react">Explain the concept of one-way data binding in React.</h3>
+<p>In React, data flows from parent to child components via props, ensuring a unidirectional data flow.</p>
+<h3 id="what-are-keys-in-react-why-are-they-important">What are keys in React? Why are they important?</h3>
+<p>Keys help React identify which elements have changed, improving rendering performance.</p>
+<h3 id="what-is-the-purpose-of-render-in-class-components">What is the purpose of render() in class components?</h3>
+<p>The <code>render()</code> method returns the JSX to be rendered.</p>
+<h1 id="react-hooks-component-logic">React Hooks &amp; Component Logic</h1>
+<h3 id="what-are-react-hooks">What are React hooks?</h3>
+<p>Hooks are functions that let you use state and lifecycle features in functional components.</p>
+<h3 id="name-commonly-used-hooks">Name commonly used hooks.</h3>
+<ul>
+<li><code>useState</code></li>
+<li><code>useEffect</code></li>
+<li><code>useContext</code></li>
+<li><code>useReducer</code></li>
+</ul>
+<h3 id="explain-the-useeffect-hook">Explain the useEffect hook.</h3>
+<p><code>useEffect</code> performs side effects in functional components.</p>
+<h3 id="why-is-cleanup-needed-in-useeffect">Why is cleanup needed in useEffect?</h3>
+<p>Cleanup prevents memory leaks by removing subscriptions or timers.</p>
+<h3 id="how-is-useeffect-different-from-componentdidmount-and-componentdidupdate">How is useEffect different from componentDidMount and componentDidUpdate?</h3>
+<p><code>useEffect</code> combines the behavior of <code>componentDidMount</code>, <code>componentDidUpdate</code>, and <code>componentWillUnmount</code>.</p>
+<h3 id="explain-usecallback-vs-usememo">Explain useCallback vs useMemo.</h3>
+<ul>
+<li><strong>useCallback</strong>: Memoizes a function.</li>
+<li><strong>useMemo</strong>: Memoizes a value.</li>
+</ul>
+<h3 id="what-is-memoization-in-react">What is memoization in React?</h3>
+<p>Memoization optimizes performance by caching results of expensive computations.</p>
+<h3 id="what-is-a-custom-hook">What is a custom hook?</h3>
+<p>A custom hook is a reusable function that encapsulates logic using hooks.</p>
+<h3 id="how-do-you-create-a-custom-hook-and-why">How do you create a custom hook and why?</h3>
+<pre><code class="language-javascript">function useCounter(initialValue = 0) {
+  const [count, setCount] = useState(initialValue);
+  const increment = () =&gt; setCount(count + 1);
+  return { count, increment };
+}
+</code></pre>
+<h3 id="what-is-the-usereducer-hook">What is the useReducer hook?</h3>
+<p><code>useReducer</code> is an alternative to <code>useState</code> for managing complex state logic.</p>
+<h3 id="implement-a-counter-using-usereducer">Implement a counter using useReducer.</h3>
+<pre><code class="language-javascript">import React, { useReducer } from 'react';
+
+function reducer(state, action) {
+  switch (action.type) {
+    case 'increment':
+      return { count: state.count + 1 };
+    default:
+      return state;
+  }
+}
+
+function Counter() {
+  const [state, dispatch] = useReducer(reducer, { count: 0 });
+  return &lt;button onClick={() =&gt; dispatch({ type: 'increment' })}&gt;{state.count}&lt;/button&gt;;
+}
+</code></pre>
+<h3 id="what-is-a-pure-component">What is a pure component?</h3>
+<p>A pure component renders only when its props or state change.</p>
+<h1 id="react-forms-and-components">React Forms and Components</h1>
+<h3 id="what-is-a-controlled-component">What is a controlled component?</h3>
+<p>A controlled component has its value controlled by React state.</p>
+<h3 id="what-is-an-uncontrolled-component">What is an uncontrolled component?</h3>
+<p>An uncontrolled component manages its value using the DOM.</p>
+<h3 id="how-does-react-handle-forms">How does React handle forms?</h3>
+<p>React handles forms using controlled components and event handlers.</p>
+<h3 id="explain-event-handling-for-inputs">Explain event handling for inputs.</h3>
+<p>React uses the <code>onChange</code> event to handle input changes.</p>
+<h1 id="react-advanced-concepts">React Advanced Concepts</h1>
+<h3 id="what-are-higher-order-components-hocs">What are higher-order components (HOCs)?</h3>
+<p>HOCs are functions that take a component and return a new component.</p>
+<h3 id="what-is-the-context-api-how-is-it-used-to-manage-state-globally">What is the Context API? How is it used to manage state globally?</h3>
+<p>The Context API provides a way to share state across components without prop drilling.</p>
+<h3 id="what-is-reactfragment-and-when-would-you-use-it">What is React.Fragment, and when would you use it?</h3>
+<p><code>React.Fragment</code> groups multiple elements without adding extra nodes to the DOM.</p>
+<h3 id="what-are-react-portals-when-would-you-use-them">What are React Portals? When would you use them?</h3>
+<p>Portals render children into a DOM node outside the parent component.</p>
+<h3 id="what-are-proptypes-how-do-you-validate-props">What are PropTypes? How do you validate props?</h3>
+<p>PropTypes validate props passed to components.</p>
+<pre><code class="language-javascript">import PropTypes from 'prop-types';
+
+function MyComponent({ name }) {
+  return &lt;div&gt;{name}&lt;/div&gt;;
+}
+
+MyComponent.propTypes = {
+  name: PropTypes.string.isRequired,
+};
+</code></pre>
+<h3 id="what-is-lazy-loading-in-react-explain-reactlazy-and-suspense">What is lazy loading in React? Explain React.lazy and Suspense.</h3>
+<p>Lazy loading loads components only when needed. <code>React.lazy</code> and <code>Suspense</code> enable this.</p>
+<pre><code class="language-javascript">const LazyComponent = React.lazy(() =&gt; import('./LazyComponent'));
+
+function App() {
+  return (
+    &lt;React.Suspense fallback={&lt;div&gt;Loading...&lt;/div&gt;}&gt;
+      &lt;LazyComponent /&gt;
+    &lt;/React.Suspense&gt;
+  );
+}
+</code></pre>
+<h3 id="what-is-reconciliation-in-react">What is reconciliation in React?</h3>
+<p>Reconciliation is React's process of updating the DOM by comparing the Virtual DOM with the previous version.</p>
+<h3 id="how-does-the-virtual-dom-compare-elements-during-updates">How does the Virtual DOM compare elements during updates?</h3>
+<p>React uses a diffing algorithm to compare elements and update only the changed parts.</p>
+<h3 id="what-is-server-side-rendering-ssr-in-react">What is server-side rendering (SSR) in React?</h3>
+<p>SSR renders React components on the server and sends HTML to the client.</p>
+<h3 id="how-does-ssr-differ-from-client-side-rendering">How does SSR differ from client-side rendering?</h3>
+<ul>
+<li><strong>SSR</strong>: Renders on the server.</li>
+<li><strong>Client-side rendering</strong>: Renders in the browser.</li>
+</ul>
+<h3 id="what-is-hydration-in-react">What is hydration in React?</h3>
+<p>Hydration attaches event listeners to server-rendered HTML.</p>
+<h3 id="how-does-the-react-fiber-architecture-improve-performance">How does the React Fiber architecture improve performance?</h3>
+<p>Fiber improves rendering performance by breaking rendering work into chunks.</p>
+<h3 id="how-would-you-handle-global-state-management-without-redux">How would you handle global state management without Redux?</h3>
+<p>Use the Context API or libraries like Zustand or Jotai.</p>
+<h3 id="explain-error-boundaries-in-react-how-do-you-implement-them">Explain error boundaries in React. How do you implement them?</h3>
+<p>Error boundaries catch JavaScript errors in components.</p>
+<pre><code class="language-javascript">class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, info) {
+    console.error(error, info);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return &lt;h1&gt;Something went wrong.&lt;/h1&gt;;
+    }
+    return this.props.children;
+  }
+}
+</code></pre>
+<h1 id="react-performance-optimization">React Performance &amp; Optimization</h1>
+<h3 id="how-to-optimize-a-react-component-to-prevent-unnecessary-re-renders">How to optimize a React component to prevent unnecessary re-renders?</h3>
+<ul>
+<li>Use <code>React.memo</code>.</li>
+<li>Use <code>useCallback</code> and <code>useMemo</code>.</li>
+<li>Avoid inline functions.</li>
+</ul>
+<h3 id="what-is-reactmemo">What is React.memo?</h3>
+<p><code>React.memo</code> is a higher-order component that prevents re-renders if props do not change.</p>
+<h3 id="what-is-usetransition-react-18-feature">What is useTransition? (React 18 feature)</h3>
+<p><code>useTransition</code> allows marking updates as non-urgent.</p>
+<h3 id="write-a-react-component-to-fetch-data-from-an-api-and-display-it">Write a React component to fetch data from an API and display it.</h3>
+<pre><code class="language-javascript">import React, { useState, useEffect } from 'react';
+
+function DataFetcher() {
+  const [data, setData] = useState(null);
+
+  useEffect(() =&gt; {
+    fetch('https://api.example.com/data')
+      .then((response) =&gt; response.json())
+      .then((data) =&gt; setData(data));
+  }, []);
+
+  return &lt;div&gt;{data ? JSON.stringify(data) : 'Loading...'}&lt;/div&gt;;
+}
+</code></pre>
+<h3 id="explain-how-you-would-debug-a-react-application-with-performance-issues">Explain how you would debug a React application with performance issues.</h3>
+<ul>
+<li>Use React Developer Tools.</li>
+<li>Profile components with the Performance tab.</li>
+<li>Optimize rendering with <code>React.memo</code> and hooks.</li>
+</ul>
+<h1 id="react-vs-other-tech">React vs Other Tech</h1>
+<h3 id="what-is-the-difference-between-react-and-react-native">What is the difference between React and React Native?</h3>
+<ul>
+<li><strong>React</strong>: For building web applications.</li>
+<li><strong>React Native</strong>: For building mobile applications.</li>
+</ul>
+<h3 id="what-is-redux-and-how-does-it-integrate-with-react">What is Redux, and how does it integrate with React?</h3>
+<p>Redux is a state management library. It integrates with React using the <code>react-redux</code> library.</p>
+<h1 id="uiux-and-responsive-design">UI/UX and Responsive Design</h1>
+<h3 id="what-is-responsive-font-size">What is responsive font size?</h3>
+<p>Responsive font size adjusts based on screen size using CSS units like <code>em</code>, <code>rem</code>, or media queries.</p>
+<h3 id="what-is-the-solid-principle-applies-to-component-design-architecture">What is the SOLID principle? (applies to component design &amp; architecture)</h3>
+<p>The SOLID principles are design principles for maintainable and scalable code:
+- <strong>S</strong>: Single Responsibility Principle
+- <strong>O</strong>: Open/Closed Principle
+- <strong>L</strong>: Liskov Substitution Principle
+- <strong>I</strong>: Interface Segregation Principle
+- <strong>D</strong>: Dependency Inversion Principle</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

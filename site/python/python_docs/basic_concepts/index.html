@@ -1,0 +1,1017 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/python/python_docs/basic_concepts/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Python Basic Concepts and Data Types - Interview Preparation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#python-basic-concepts-and-data-types" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Interview Preparation" class="md-header__button md-logo" aria-label="Interview Preparation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Interview Preparation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Python Basic Concepts and Data Types
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../react/" class="md-tabs__link">
+          
+  
+  
+  React
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Interview Preparation" class="md-nav__button md-logo" aria-label="Interview Preparation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Interview Preparation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    React
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            React
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../react/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-types-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Types in Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Types in Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-numeric-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Numeric Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-sequence-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Sequence Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-text-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Text Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-set-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Set Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-mapping-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Mapping Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-boolean-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Boolean Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-none-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. None Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-concepts-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Concepts in Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Concepts in Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-variables-and-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Variables and Assignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-control-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Control Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-classes-and-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Classes and Objects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-exception-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Exception Handling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-modules-and-imports" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Modules and Imports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Packages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-typing" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Typing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Error Handling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-what-is-a-virtual-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. What is a Virtual Environment?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-python-package-installer-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Python Package Installer (pip)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-requestresponse-models-with-pydantic" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Request/Response Models with Pydantic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-what-is-hashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. What is Hashing?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Handling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opening a File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writing-to-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing to a File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-from-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading from a File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appending-to-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appending to a File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-with-binary-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working with Binary Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-if-a-file-exists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking if a File Exists
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#closing-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing Files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="python-basic-concepts-and-data-types">Python Basic Concepts and Data Types</h1>
+<h2 id="data-types-in-python">Data Types in Python</h2>
+<p>Python provides several built-in data types. Below is a list of the most commonly used ones:</p>
+<h3 id="1-numeric-types">1. Numeric Types</h3>
+<ul>
+<li><strong>int</strong>: Integer values.</li>
+<li><strong>float</strong>: Floating-point numbers.</li>
+<li><strong>complex</strong>: Complex numbers.</li>
+</ul>
+<pre><code class="language-python"># Examples of numeric types
+x = 10         # int
+y = 3.14       # float
+z = 1 + 2j     # complex
+</code></pre>
+<h3 id="2-sequence-types">2. Sequence Types</h3>
+<ul>
+<li><strong>list</strong>: Ordered, mutable collection.</li>
+<li><strong>tuple</strong>: Ordered, immutable collection.</li>
+<li><strong>range</strong>: Sequence of numbers.</li>
+</ul>
+<pre><code class="language-python"># Examples of sequence types
+my_list = [1, 2, 3]       # list
+my_tuple = (1, 2, 3)      # tuple
+my_range = range(1, 5)    # range
+</code></pre>
+<h3 id="3-text-type">3. Text Type</h3>
+<ul>
+<li><strong>str</strong>: String of characters.</li>
+</ul>
+<pre><code class="language-python"># Example of text type
+greeting = &quot;Hello, World!&quot;  # str
+</code></pre>
+<h3 id="4-set-types">4. Set Types</h3>
+<ul>
+<li><strong>set</strong>: Unordered, mutable collection of unique items.</li>
+<li><strong>frozenset</strong>: Unordered, immutable collection of unique items.</li>
+</ul>
+<pre><code class="language-python"># Examples of set types
+my_set = {1, 2, 3}          # set
+my_frozenset = frozenset([1, 2, 3])  # frozenset
+</code></pre>
+<h3 id="5-mapping-type">5. Mapping Type</h3>
+<ul>
+<li><strong>dict</strong>: Key-value pairs.</li>
+</ul>
+<pre><code class="language-python"># Example of mapping type
+my_dict = {&quot;name&quot;: &quot;Alice&quot;, &quot;age&quot;: 25}  # dict
+</code></pre>
+<h3 id="6-boolean-type">6. Boolean Type</h3>
+<ul>
+<li><strong>bool</strong>: Represents <code>True</code> or <code>False</code>.</li>
+</ul>
+<pre><code class="language-python"># Example of boolean type
+is_active = True  # bool
+</code></pre>
+<h3 id="7-none-type">7. None Type</h3>
+<ul>
+<li><strong>NoneType</strong>: Represents the absence of a value.</li>
+</ul>
+<pre><code class="language-python"># Example of None type
+result = None  # NoneType
+</code></pre>
+<hr />
+<h2 id="basic-concepts-in-python">Basic Concepts in Python</h2>
+<h3 id="1-variables-and-assignment">1. Variables and Assignment</h3>
+<p>Variables are used to store data.</p>
+<pre><code class="language-python">x = 5
+name = &quot;John&quot;
+</code></pre>
+<h3 id="2-control-flow">2. Control Flow</h3>
+<ul>
+<li><strong>if-else</strong>: Conditional statements.</li>
+<li><strong>for</strong> and <strong>while</strong>: Loops.</li>
+</ul>
+<pre><code class="language-python"># Example of control flow
+if x &gt; 0:
+    print(&quot;Positive&quot;)
+else:
+    print(&quot;Non-positive&quot;)
+
+for i in range(3):
+    print(i)
+
+while x &gt; 0:
+    print(x)
+    x -= 1
+</code></pre>
+<h3 id="3-functions">3. Functions</h3>
+<p>Functions are reusable blocks of code.</p>
+<pre><code class="language-python"># Example of a function
+def greet(name):
+    return f&quot;Hello, {name}!&quot;
+
+print(greet(&quot;Alice&quot;))
+</code></pre>
+<h3 id="4-classes-and-objects">4. Classes and Objects</h3>
+<p>Python supports object-oriented programming.</p>
+<pre><code class="language-python"># Example of a class
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def introduce(self):
+        return f&quot;My name is {self.name} and I am {self.age} years old.&quot;
+
+person = Person(&quot;Alice&quot;, 25)
+print(person.introduce())
+</code></pre>
+<h3 id="5-exception-handling">5. Exception Handling</h3>
+<p>Handle errors gracefully using <code>try-except</code>.</p>
+<pre><code class="language-python"># Example of exception handling
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print(&quot;Cannot divide by zero!&quot;)
+</code></pre>
+<h3 id="6-modules-and-imports">6. Modules and Imports</h3>
+<p>Reuse code by importing modules.</p>
+<pre><code class="language-python"># Example of importing a module
+import math
+
+print(math.sqrt(16))
+</code></pre>
+<hr />
+<h3 id="7-modules">7. Modules</h3>
+<p>Modules in Python are files containing Python code (functions, classes, or variables) that can be reused in other programs. They help organize code into manageable sections.</p>
+<pre><code class="language-python"># Example of creating and using a module
+# my_module.py
+def add(a, b):
+    return a + b
+
+# main.py
+import my_module
+print(my_module.add(2, 3))  # Output: 5
+</code></pre>
+<h3 id="8-packages">8. Packages</h3>
+<p>A package is a collection of modules organized in directories containing a special <code>__init__.py</code> file. Packages allow for hierarchical structuring of the module namespace.</p>
+<pre><code class="language-plaintext">my_package/
+    __init__.py
+    module1.py
+    module2.py
+</code></pre>
+<pre><code class="language-python"># Example of using a package
+from my_package import module1
+</code></pre>
+<h3 id="9-typing">9. Typing</h3>
+<p>Python's <code>typing</code> module provides support for type hints, making code more readable and reducing runtime errors.</p>
+<pre><code class="language-python">from typing import List, Dict
+
+def greet(names: List[str]) -&gt; str:
+    return &quot;, &quot;.join(names)
+
+print(greet([&quot;Alice&quot;, &quot;Bob&quot;]))
+</code></pre>
+<h3 id="10-error-handling">10. Error Handling</h3>
+<p>Error handling in Python is done using <code>try-except</code> blocks. You can also use <code>finally</code> for cleanup and <code>else</code> for code that runs if no exception occurs.</p>
+<pre><code class="language-python">try:
+    result = 10 / 2
+except ZeroDivisionError:
+    print(&quot;Cannot divide by zero!&quot;)
+else:
+    print(&quot;Division successful:&quot;, result)
+finally:
+    print(&quot;Execution complete.&quot;)
+</code></pre>
+<h3 id="11-what-is-a-virtual-environment">11. What is a Virtual Environment?</h3>
+<p>A virtual environment is an isolated Python environment that allows you to manage dependencies for a specific project without affecting the global Python installation.</p>
+<pre><code class="language-bash"># Create a virtual environment
+python -m venv myenv
+
+# Activate the virtual environment
+# On Windows:
+myenv\Scripts\activate
+# On macOS/Linux:
+source myenv/bin/activate
+
+# Deactivate the virtual environment
+deactivate
+</code></pre>
+<h3 id="12-python-package-installer-pip">12. Python Package Installer (pip)</h3>
+<p><code>pip</code> is the package manager for Python, used to install and manage third-party libraries.</p>
+<pre><code class="language-bash"># Install a package
+pip install requests
+
+# List installed packages
+pip list
+
+# Uninstall a package
+pip uninstall requests
+</code></pre>
+<h3 id="13-requestresponse-models-with-pydantic">13. Request/Response Models with Pydantic</h3>
+<p>Pydantic is a library for data validation and settings management using Python type annotations. It is commonly used with FastAPI for request/response models.</p>
+<pre><code class="language-python">from pydantic import BaseModel
+
+class User(BaseModel):
+    id: int
+    name: str
+    email: str
+
+user = User(id=1, name=&quot;Alice&quot;, email=&quot;alice@example.com&quot;)
+print(user.dict())
+</code></pre>
+<h3 id="14-what-is-hashing">14. What is Hashing?</h3>
+<p>Hashing is the process of converting data into a fixed-size hash value using a hash function. It is commonly used in data structures like hash tables and for cryptographic purposes.</p>
+<pre><code class="language-python">import hashlib
+
+# Example of hashing a string
+data = &quot;hello&quot;
+hash_object = hashlib.sha256(data.encode())
+print(hash_object.hexdigest())
+</code></pre>
+<h2 id="file-handling">File Handling</h2>
+<p>File handling in Python allows you to work with files for reading, writing, and appending data. Python provides built-in functions like <code>open()</code> to handle files.</p>
+<h4 id="opening-a-file">Opening a File</h4>
+<p>You can open a file using the <code>open()</code> function. It requires the file name and mode as arguments.</p>
+<p>Modes:
+- <code>'r'</code>: Read (default mode)
+- <code>'w'</code>: Write (overwrites the file if it exists)
+- <code>'a'</code>: Append (adds data to the end of the file)
+- <code>'b'</code>: Binary mode
+- <code>'x'</code>: Create (fails if the file already exists)</p>
+<pre><code class="language-python"># Example of opening a file
+file = open(&quot;example.txt&quot;, &quot;r&quot;)
+content = file.read()
+print(content)
+file.close()
+</code></pre>
+<h4 id="writing-to-a-file">Writing to a File</h4>
+<p>Use the <code>'w'</code> or <code>'a'</code> mode to write data to a file.</p>
+<pre><code class="language-python"># Example of writing to a file
+with open(&quot;example.txt&quot;, &quot;w&quot;) as file:
+    file.write(&quot;Hello, World!&quot;)
+</code></pre>
+<h4 id="reading-from-a-file">Reading from a File</h4>
+<p>You can read the entire content, a specific number of characters, or line by line.</p>
+<pre><code class="language-python"># Example of reading a file
+with open(&quot;example.txt&quot;, &quot;r&quot;) as file:
+    for line in file:
+        print(line.strip())
+</code></pre>
+<h4 id="appending-to-a-file">Appending to a File</h4>
+<p>Use the <code>'a'</code> mode to add data to the end of a file.</p>
+<pre><code class="language-python"># Example of appending to a file
+with open(&quot;example.txt&quot;, &quot;a&quot;) as file:
+    file.write(&quot;\nAppended text.&quot;)
+</code></pre>
+<h4 id="working-with-binary-files">Working with Binary Files</h4>
+<p>Binary mode (<code>'b'</code>) is used for non-text files like images or videos.</p>
+<pre><code class="language-python"># Example of reading a binary file
+with open(&quot;image.jpg&quot;, &quot;rb&quot;) as file:
+    data = file.read()
+    print(data)
+</code></pre>
+<h4 id="file-operations">File Operations</h4>
+<ul>
+<li><code>file.read()</code>: Reads the entire file.</li>
+<li><code>file.readline()</code>: Reads one line at a time.</li>
+<li><code>file.readlines()</code>: Reads all lines into a list.</li>
+<li><code>file.write(data)</code>: Writes data to the file.</li>
+<li><code>file.writelines(lines)</code>: Writes a list of lines to the file.</li>
+</ul>
+<h4 id="checking-if-a-file-exists">Checking if a File Exists</h4>
+<p>Use the <code>os</code> module to check if a file exists.</p>
+<pre><code class="language-python">import os
+
+if os.path.exists(&quot;example.txt&quot;):
+    print(&quot;File exists.&quot;)
+else:
+    print(&quot;File does not exist.&quot;)
+</code></pre>
+<h4 id="closing-files">Closing Files</h4>
+<p>Always close files after use to free up system resources. Using the <code>with</code> statement automatically closes the file.</p>
+<pre><code class="language-python"># Example of closing a file
+file = open(&quot;example.txt&quot;, &quot;r&quot;)
+file.close()
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

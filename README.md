@@ -1,48 +1,4 @@
 # Interview Preparation Guide
-#
-
-## Directory structure
-
-Home
-Authentication
-    - Introducion
-    - SAT
-Platform
-    - Init
-    - Offers
-    - Cart
-    - Consent
-    - Purchase
-    - Poll Order status
-    - Get Activation Url
-    - Subscriptions
-        - Get subscription
-        - Re - subscribe
-        - Un - subscribe
-
-Support
-    - Frequently Asked Questions
-    - Contact
-
-## How to contribute
-
-1. Close the repository
-
-```
-git clone git@github.comcast.com:sales-rpil/shopfront-dev-portal.git
-```
-
-2. Familiarize yourself on the structure of content inside markdowns folder
-
-3. Update content that is related to you
-
-4. Test it locally before you commit the changes ( see test in local section )
-
-
-## Writing content
-
-The developer portal content is written in mark down, Reference https://www.mkdocs.org/user-guide/writing-your-docs/ should provide the details
-on how to write content.
 
 ## How to test locally
 

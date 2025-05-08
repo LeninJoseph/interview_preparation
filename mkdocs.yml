@@ -1,4 +1,5 @@
 site_name: Interview Preparation
+site_url: https://leninjoseph.github.io/interview_preparation/
 theme:
   name: material
   features:
@@ -8,3 +9,10 @@ theme:
     accent: indigo
   navigation:
     location: left
+
+nav:
+  - Home: index.md
+  - React:
+      - Introduction: react/index.md
+plugins:
+  - search
