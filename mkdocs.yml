@@ -15,13 +15,49 @@ nav:
   - React:
       - Introduction: react/index.md
       - Learn JS: react/react_docs/js_learn.md
+      - JS Mid Level: react/react_docs/js_mid_learn.md
       - Learn React: react/react_docs/react_learn.md
+      - ES6 Features: react/react_docs/es6_features.md
       - Technical Topics: react/react_docs/technical_topics.md
       - Behaviral Topics: react/react_docs/behavioral_questions.md
+  - Node:
+      - Introduction: node/index.md
+      - Questions: node/node_questions.md
   - Python:
       - Introduction: python/index.md
       - Python Basics: python/python_docs/basic_concepts.md
       - OOPs: python/python_docs/oops.md
+      - Python Fundamentals: python/python_docs/python_fundamentals.md
+      - Data Structures: python/python_docs/data_structure.md
+      - Algorithms: python/python_docs/algorithms.md
+      - Advanced Concepts:
+          - Multithreading: python/python_docs/advanced_concepts/multithreading.md
+          - Multiprocessing: python/python_docs/advanced_concepts/multiprocessing.md
+          - Asyncio: python/python_docs/advanced_concepts/asyncio.md
+          - Memory Management: python/python_docs/advanced_concepts/memory_management.md
+          - Iterators: python/python_docs/advanced_concepts/iterators.md
+          - Generators: python/python_docs/advanced_concepts/generators.md
+          - Decorators: python/python_docs/advanced_concepts/decorators.md
+          - Context Managers: python/python_docs/advanced_concepts/context_managers.md
+          - Metaclasses: python/python_docs/advanced_concepts/metaclasses.md
+          - Caching: python/python_docs/advanced_concepts/caching.md
+      - Fast API: python/python_docs/fast-api.md
+  - Database:
+      - Introduction: database/index.md
+      - SQL:
+          - Joins: database/joins.md
+          - Concepts: database/db_concepts.md
+      - No SQL:
+          - Introduction: database/nosql_concepts.md
+  - General:
+      - General Concepts: general/index.md
+      - Auth: general/auth.md
+      - Sockets: general/sockets.md
+      - Security best practices: general/security_best_practices.md
+      - Middleware: general/middleware.md
+      - Caching: general/caching.md
+      - Load Balancing: general/load_balancing.md
+
   - Design Patterns:
       - Introduction: design_patterns/index.md
       - Real Time Examples:

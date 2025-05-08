@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/design_pattern/real_time_patterns/factory_pattern/">
+        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/design_patterns/real_time_patterns/api_gateway_pattern/">
       
       
+        <link rel="prev" href="../../">
+      
+      
+        <link rel="next" href="../dependancy_injection_pattern/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Factory Pattern - Interview Preparation</title>
+        <title>API Gateway Pattern - Interview Preparation</title>
       
     
     
@@ -68,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#factory-pattern" class="md-skip">
+        <a href="#what-is-it" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Factory Pattern
+              API Gateway Pattern
             
           </span>
         </div>
@@ -221,6 +225,28 @@
   
   
   Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Design Patterns
 
         </a>
       </li>
@@ -563,6 +589,395 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Patterns
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Design Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Real Time Examples
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Real Time Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    API Gateway Pattern
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Gateway Pattern
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 What Is It?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#responsibilities-of-an-api-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Responsibilities of an API Gateway:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Architecture Diagram:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-with-nodejs-express" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧑‍💻 Example (with Node.js + Express):
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Benefits:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drawbacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Drawbacks:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#popular-tools-for-real-world-api-gateways" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠 Popular Tools for Real-World API Gateways:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dependancy_injection_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dependancy Injection Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factory_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Factory Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rule_engine_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rule Engine Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template_method_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template Method Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transformer_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transformer Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resolver_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resolver Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -580,8 +995,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -590,54 +1003,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
+  <a href="#what-is-it" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features
+      🧱 What Is It?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#structure" class="md-nav__link">
+  <a href="#responsibilities-of-an-api-gateway" class="md-nav__link">
     <span class="md-ellipsis">
-      Structure
+      ✅ Responsibilities of an API Gateway:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-in-python" class="md-nav__link">
+  <a href="#architecture-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Example in Python
+      📦 Architecture Diagram:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advantages" class="md-nav__link">
+  <a href="#example-with-nodejs-express" class="md-nav__link">
     <span class="md-ellipsis">
-      Advantages
+      🧑‍💻 Example (with Node.js + Express):
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#disadvantages" class="md-nav__link">
+  <a href="#benefits" class="md-nav__link">
     <span class="md-ellipsis">
-      Disadvantages
+      🚀 Benefits:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-cases" class="md-nav__link">
+  <a href="#drawbacks" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Cases
+      ⚠️ Drawbacks:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#popular-tools-for-real-world-api-gateways" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠 Popular Tools for Real-World API Gateways:
     </span>
   </a>
   
@@ -659,71 +1081,88 @@
 
 
 
-<h1 id="factory-pattern">Factory Pattern</h1>
-<p>The Factory Pattern is a creational design pattern that provides an interface for creating objects in a superclass but allows subclasses to alter the type of objects that will be created. It helps promote loose coupling by delegating the instantiation logic to child classes.</p>
-<h2 id="key-features">Key Features</h2>
-<ul>
-<li>Encapsulates object creation logic.</li>
-<li>Promotes code reusability and scalability.</li>
-<li>Reduces tight coupling between client code and specific classes.</li>
-</ul>
-<h2 id="structure">Structure</h2>
+  <h1>API Gateway Pattern</h1>
+
+<p>The <strong>API Gateway</strong> design pattern is a <strong>structural pattern</strong> used primarily in <strong>microservices architectures</strong> to provide a single entry point for all client requests.</p>
+<hr />
+<h3 id="what-is-it">🧱 <strong>What Is It?</strong></h3>
+<p>An <strong>API Gateway</strong> is a <strong>server</strong> that acts as an <strong>intermediary</strong> between clients and backend services. It handles requests, routes them to the appropriate service, aggregates the results, and returns them to the client.</p>
+<hr />
+<h3 id="responsibilities-of-an-api-gateway">✅ <strong>Responsibilities of an API Gateway:</strong></h3>
 <ol>
-<li><strong>Product</strong>: Defines the interface of objects the factory method creates.</li>
-<li><strong>ConcreteProduct</strong>: Implements the Product interface.</li>
-<li><strong>Creator</strong>: Declares the factory method that returns objects of type Product.</li>
-<li><strong>ConcreteCreator</strong>: Overrides the factory method to return instances of ConcreteProduct.</li>
+<li><strong>Routing</strong> – Directs requests to the appropriate microservice.</li>
+<li><strong>Aggregation</strong> – Combines results from multiple services into one response.</li>
+<li><strong>Authentication &amp; Authorization</strong> – Validates tokens and permissions.</li>
+<li><strong>Rate Limiting &amp; Throttling</strong> – Prevents abuse by limiting request frequency.</li>
+<li><strong>Caching</strong> – Reduces load on backend services by caching responses.</li>
+<li><strong>Logging &amp; Monitoring</strong> – Tracks requests and performance.</li>
+<li><strong>Transformation</strong> – Converts protocols (e.g., HTTP to WebSocket) or request/response formats.</li>
 </ol>
-<h2 id="example-in-python">Example in Python</h2>
-<pre><code class="language-python"># filepath: /Users/lenin.pitchai/Documents/LENIN/Personal/interview_preparation/docs/design_pattern/real_time_patterns/factory_pattern.md
-from abc import ABC, abstractmethod
-
-# Product Interface
-class Shape(ABC):
-    @abstractmethod
-    def draw(self):
-        pass
-
-# Concrete Products
-class Circle(Shape):
-    def draw(self):
-        return &quot;Drawing a Circle&quot;
-
-class Square(Shape):
-    def draw(self):
-        return &quot;Drawing a Square&quot;
-
-# Creator
-class ShapeFactory:
-    @staticmethod
-    def get_shape(shape_type):
-        if shape_type == &quot;Circle&quot;:
-            return Circle()
-        elif shape_type == &quot;Square&quot;:
-            return Square()
-        else:
-            raise ValueError(&quot;Unknown shape type&quot;)
-
-# Client Code
-shape = ShapeFactory.get_shape(&quot;Circle&quot;)
-print(shape.draw())  # Output: Drawing a Circle
+<hr />
+<h3 id="architecture-diagram">📦 <strong>Architecture Diagram:</strong></h3>
+<pre><code>        +---------+
+        |  Client |
+        +----+----+
+             |
+             v
+      +-------------+
+      | API Gateway |
+      +------+------+
+             |
+  +----------+----------+
+  |          |          |
+  v          v          v
+Service A  Service B  Service C
 </code></pre>
-<h2 id="advantages">Advantages</h2>
+<hr />
+<h3 id="example-with-nodejs-express">🧑‍💻 <strong>Example (with Node.js + Express):</strong></h3>
+<pre><code class="language-javascript">const express = require(&quot;express&quot;);
+const app = express();
+const axios = require(&quot;axios&quot;);
+
+app.get(&quot;/user/:id&quot;, async (req, res) =&gt; {
+  // Example of request routing and aggregation
+  try {
+    const user = await axios.get(`http://user-service/users/${req.params.id}`);
+    const orders = await axios.get(`http://order-service/orders?userId=${req.params.id}`);
+
+    res.json({
+      user: user.data,
+      orders: orders.data
+    });
+  } catch (err) {
+    res.status(500).json({ message: &quot;Error fetching data&quot; });
+  }
+});
+
+app.listen(3000, () =&gt; console.log(&quot;API Gateway listening on port 3000&quot;));
+</code></pre>
+<hr />
+<h3 id="benefits">🚀 <strong>Benefits:</strong></h3>
 <ul>
-<li>Simplifies object creation.</li>
-<li>Promotes adherence to the Open/Closed Principle.</li>
-<li>Makes the code easier to test and maintain.</li>
+<li>Centralized entry point for client interactions</li>
+<li>Simplifies client logic (clients don’t need to call multiple services)</li>
+<li>Enforces security and policy in one place</li>
+<li>Enables backend evolution (you can split/merge services without affecting clients)</li>
 </ul>
-<h2 id="disadvantages">Disadvantages</h2>
+<hr />
+<h3 id="drawbacks">⚠️ <strong>Drawbacks:</strong></h3>
 <ul>
-<li>Can introduce complexity with many subclasses.</li>
-<li>May require additional effort to understand and implement.</li>
+<li>Single point of failure (unless replicated)</li>
+<li>Adds a slight latency overhead</li>
+<li>Can become a bottleneck if not properly scaled</li>
 </ul>
-<h2 id="use-cases">Use Cases</h2>
+<hr />
+<h3 id="popular-tools-for-real-world-api-gateways">🛠 Popular Tools for Real-World API Gateways:</h3>
 <ul>
-<li>When the exact type of object to be created is determined at runtime.</li>
-<li>When you want to centralize object creation logic to ensure consistency.</li>
+<li><strong>AWS API Gateway</strong></li>
+<li><strong>Kong</strong></li>
+<li><strong>NGINX</strong></li>
+<li><strong>Zuul (Netflix)</strong></li>
+<li><strong>Express Gateway (Node.js)</strong></li>
+<li><strong>Apigee (Google)</strong></li>
 </ul>
+<hr />
 
 
 

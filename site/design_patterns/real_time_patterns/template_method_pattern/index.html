@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/design_pattern/real_time_patterns/resolver_pattern/">
+        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/design_patterns/real_time_patterns/template_method_pattern/">
       
       
+        <link rel="prev" href="../rule_engine_pattern/">
+      
+      
+        <link rel="next" href="../transformer_pattern/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Resolver pattern - Interview Preparation</title>
+        <title>Template Method Pattern - Interview Preparation</title>
       
     
     
@@ -68,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-the-resolver-pattern" class="md-skip">
+        <a href="#template-method-pattern" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Resolver pattern
+              Template Method Pattern
             
           </span>
         </div>
@@ -221,6 +225,28 @@
   
   
   Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Design Patterns
 
         </a>
       </li>
@@ -563,6 +589,363 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Patterns
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Design Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Real Time Examples
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Real Time Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api_gateway_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Gateway Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dependancy_injection_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dependancy Injection Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factory_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Factory Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rule_engine_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rule Engine Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Template Method Pattern
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template Method Pattern
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bpmn-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      BPMN Representation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Points
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transformer_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Transformer Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resolver_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resolver Pattern
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -580,6 +963,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -588,78 +973,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-the-resolver-pattern" class="md-nav__link">
+  <a href="#bpmn-representation" class="md-nav__link">
     <span class="md-ellipsis">
-      🧩 What is the Resolver Pattern?
+      BPMN Representation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#where-is-it-used" class="md-nav__link">
+  <a href="#python-example" class="md-nav__link">
     <span class="md-ellipsis">
-      🔧 Where Is It Used?
+      Python Example
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#graphql-resolver-pattern" class="md-nav__link">
+  <a href="#key-points" class="md-nav__link">
     <span class="md-ellipsis">
-      🧬 GraphQL Resolver Pattern
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🧬 GraphQL Resolver Pattern">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-graphql-schema" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. GraphQL Schema
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-resolvers-in-code-javascripttypescript" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Resolvers in Code (JavaScript/TypeScript)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#advantages" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Advantages
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pitfalls" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❌ Pitfalls
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resolver-pattern-beyond-graphql" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Resolver Pattern Beyond GraphQL
+      Key Points
     </span>
   </a>
   
@@ -681,87 +1015,100 @@
 
 
 
-  <h1>Resolver pattern</h1>
-
-<p>The <strong>Resolver Pattern</strong> is commonly used in <strong>GraphQL APIs</strong>, but its core concept—<strong>mapping a request to data retrieval logic</strong>—can apply more broadly to systems involving <strong>query resolution</strong> or <strong>deferred execution</strong>.</p>
+<h1 id="template-method-pattern">Template Method Pattern</h1>
+<p>The Template Method Pattern is a behavioral design pattern that defines the skeleton of an algorithm in a base class but allows subclasses to override specific steps of the algorithm without changing its structure. This pattern promotes code reuse and enforces a consistent structure for algorithms.</p>
 <hr />
-<h2 id="what-is-the-resolver-pattern">🧩 What is the Resolver Pattern?</h2>
-<p>In simple terms, a <strong>resolver</strong> is a <strong>function that resolves a value</strong> for a field or query. In the <strong>Resolver Pattern</strong>, each field or operation is mapped to a function that knows <strong>how to fetch or compute the data</strong> for it.</p>
-<p>This pattern promotes <strong>separation of concerns</strong>:</p>
-<ul>
-<li><strong>Schemas define the structure</strong></li>
-<li><strong>Resolvers define the logic</strong></li>
-</ul>
-<hr />
-<h2 id="where-is-it-used">🔧 Where Is It Used?</h2>
-<ul>
-<li><strong>GraphQL servers</strong> (most common use case)</li>
-<li><strong>DI containers</strong> (Dependency Resolution)</li>
-<li><strong>DNS resolvers</strong> (name → IP address)</li>
-<li><strong>Service Locators</strong> (service name → implementation)</li>
-</ul>
-<p>Here, we’ll focus on the <strong>GraphQL-style Resolver Pattern</strong>, which is most widely used.</p>
-<hr />
-<h2 id="graphql-resolver-pattern">🧬 GraphQL Resolver Pattern</h2>
-<h3 id="1-graphql-schema">1. <strong>GraphQL Schema</strong></h3>
-<pre><code class="language-graphql">type Query {
-    user(id: ID!): User
-}
-
-type User {
-    id: ID!
-    name: String!
-    email: String!
-}
+<h2 id="bpmn-representation">BPMN Representation</h2>
+<p>Below is a simplified BPMN (Business Process Model and Notation) diagram to represent the Template Method Pattern:</p>
+<pre><code>+-------------------+
+| Abstract Template |
++-------------------+
+    |
+    v
++-------------------+
+|    Step 1 (Fixed) |
++-------------------+
+    |
+    v
++-------------------+
+|    Step 2 (Hook)  |
++-------------------+
+    |
+    v
++-------------------+
+|    Step 3 (Fixed) |
++-------------------+
+    |
+    v
++-------------------+
+|    Step 4 (Hook)  |
++-------------------+
 </code></pre>
-<h3 id="2-resolvers-in-code-javascripttypescript">2. <strong>Resolvers in Code (JavaScript/TypeScript)</strong></h3>
-<pre><code class="language-js">const resolvers = {
-    Query: {
-        user: async (_, { id }) =&gt; {
-            return await getUserById(id);  // You provide this function
-        },
-    },
-    User: {
-        email: (user) =&gt; {
-            // This can do transformations or access controls
-            return user.email;
-        },
-    }
-};
+<p>In this diagram:
+- <strong>Fixed steps</strong> are implemented in the base class.
+- <strong>Hook steps</strong> are customizable by subclasses.</p>
+<hr />
+<h2 id="python-example">Python Example</h2>
+<p>Here is an example of the Template Method Pattern in Python:</p>
+<pre><code class="language-python">from abc import ABC, abstractmethod
+
+class DataProcessor(ABC):
+    &quot;&quot;&quot;Abstract Template Class&quot;&quot;&quot;
+
+    def process_data(self):
+    &quot;&quot;&quot;Template method defining the skeleton of the algorithm.&quot;&quot;&quot;
+    self.load_data()
+    self.clean_data()
+    self.analyze_data()
+    self.save_results()
+
+    def load_data(self):
+    &quot;&quot;&quot;Fixed step.&quot;&quot;&quot;
+    print(&quot;Loading data...&quot;)
+
+    def clean_data(self):
+    &quot;&quot;&quot;Fixed step.&quot;&quot;&quot;
+    print(&quot;Cleaning data...&quot;)
+
+    @abstractmethod
+    def analyze_data(self):
+    &quot;&quot;&quot;Hook step to be implemented by subclasses.&quot;&quot;&quot;
+    pass
+
+    def save_results(self):
+    &quot;&quot;&quot;Fixed step.&quot;&quot;&quot;
+    print(&quot;Saving results...&quot;)
+
+class SalesDataProcessor(DataProcessor):
+    &quot;&quot;&quot;Concrete implementation for sales data.&quot;&quot;&quot;
+
+    def analyze_data(self):
+    print(&quot;Analyzing sales data...&quot;)
+
+class MarketingDataProcessor(DataProcessor):
+    &quot;&quot;&quot;Concrete implementation for marketing data.&quot;&quot;&quot;
+
+    def analyze_data(self):
+    print(&quot;Analyzing marketing data...&quot;)
+
+# Usage
+if __name__ == &quot;__main__&quot;:
+    sales_processor = SalesDataProcessor()
+    sales_processor.process_data()
+
+    print()
+
+    marketing_processor = MarketingDataProcessor()
+    marketing_processor.process_data()
 </code></pre>
-<p>Each key (like <code>Query.user</code>) maps to a <strong>resolver function</strong> that receives:</p>
-<ul>
-<li><code>parent</code>: The parent object (used in nested fields)</li>
-<li><code>args</code>: Arguments passed in the query</li>
-<li><code>context</code>: Shared state or services (e.g., DB access, auth info)</li>
-<li><code>info</code>: Metadata about the query</li>
-</ul>
 <hr />
-<h2 id="advantages">✅ Advantages</h2>
-<ul>
-<li><strong>Decouples schema from business logic</strong></li>
-<li>Allows <strong>fine-grained control</strong> over how data is fetched</li>
-<li>Makes <strong>complex nested queries</strong> possible</li>
-<li>Supports <strong>authorization</strong>, <strong>validation</strong>, and <strong>lazy loading</strong></li>
-</ul>
-<hr />
-<h2 id="pitfalls">❌ Pitfalls</h2>
-<ul>
-<li>Can become messy with deeply nested resolvers (e.g., N+1 query problem)</li>
-<li>Without proper optimization, can affect <strong>performance</strong></li>
-<li>Requires <strong>good error handling</strong> for maintainability</li>
-</ul>
-<hr />
-<h2 id="resolver-pattern-beyond-graphql">🛠️ Resolver Pattern Beyond GraphQL</h2>
-<ul>
-<li><strong>DNS Resolver</strong>: Resolves domain names to IP addresses.</li>
-<li>
-<p><strong>Dependency Injection (DI) Resolver</strong>: Resolves dependencies dynamically from a container.</p>
-<p><code>python
-service = container.resolve('UserService')</code></p>
-</li>
-</ul>
-<hr />
+<h2 id="key-points">Key Points</h2>
+<ol>
+<li><strong>Template Method</strong>: The <code>process_data</code> method defines the algorithm's structure.</li>
+<li><strong>Fixed Steps</strong>: Methods like <code>load_data</code>, <code>clean_data</code>, and <code>save_results</code> are implemented in the base class.</li>
+<li><strong>Hook Steps</strong>: The <code>analyze_data</code> method is abstract and must be implemented by subclasses.</li>
+</ol>
+<p>This pattern ensures a consistent algorithm structure while allowing flexibility for specific steps.</p>
 
 
 
