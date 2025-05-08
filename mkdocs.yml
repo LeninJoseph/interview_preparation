@@ -22,5 +22,15 @@ nav:
       - Introduction: python/index.md
       - Python Basics: python/python_docs/basic_concepts.md
       - OOPs: python/python_docs/oops.md
+  - Design Patterns:
+      - Introduction: design_patterns/index.md
+      - Real Time Examples:
+          - API Gateway Pattern: design_patterns/real_time_patterns/api_gateway_pattern.md
+          - Dependancy Injection Pattern: design_patterns/real_time_patterns/dependancy_injection_pattern.md
+          - Factory Pattern: design_patterns/real_time_patterns/factory_pattern.md
+          - Rule Engine Pattern: design_patterns/real_time_patterns/rule_engine_pattern.md
+          - Template Method Pattern: design_patterns/real_time_patterns/template_method_pattern.md
+          - Transformer Pattern: design_patterns/real_time_patterns/transformer_pattern.md
+          - Resolver Pattern: design_patterns/real_time_patterns/resolver_pattern.md
 plugins:
   - search

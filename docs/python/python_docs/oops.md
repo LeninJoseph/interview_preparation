@@ -10,7 +10,7 @@ Object-Oriented Programming (OOP) is a programming paradigm that uses objects an
 - **Class**: A blueprint for creating objects.
 - **Object**: An instance of a class.
 
-#### Example:
+Example:
 ```python
 class Person:
     def __init__(self, name, age):
@@ -30,7 +30,7 @@ print(person1.greet())  # Output: Hello, my name is Alice.
 ### 2. **Encapsulation**
 Encapsulation is the bundling of data (attributes) and methods (functions) within a class. It also restricts direct access to some components using private or protected members.
 
-#### Example:
+Example:
 ```python
 class BankAccount:
     def __init__(self, balance):
@@ -52,7 +52,7 @@ print(account.get_balance())  # Output: 1500
 ### 3. **Inheritance**
 Inheritance allows a class (child) to inherit attributes and methods from another class (parent).
 
-#### Example:
+Example:
 ```python
 class Animal:
     def speak(self):
@@ -65,14 +65,14 @@ class Dog(Animal):
 dog = Dog()
 print(dog.speak())  # Output: Woof!
 ```
-### Types of Inheritance
+***Types of Inheritance***
 
 Inheritance in Python can be categorized into the following types:
 
-**Single Inheritance**  
-    A child class inherits from a single parent class.
+##### a.**Single Inheritance**  
+A child class inherits from a single parent class.
 
-#### Example:
+Example:
 ```python
 class Parent:
         def func1(self):
@@ -87,10 +87,10 @@ print(obj.func1())  # Output: This is a parent class.
 print(obj.func2())  # Output: This is a child class.
 ```
 
-**Multiple Inheritance**  
-    A child class inherits from multiple parent classes.
+##### b.**Multiple Inheritance**  
+A child class inherits from multiple parent classes.
 
-#### Example:
+Example:
 ```python
 class Parent1:
         def func1(self):
@@ -110,10 +110,10 @@ print(obj.func2())  # Output: This is Parent2.
 print(obj.func3())  # Output: This is a child class.
 ```
 
-**Multilevel Inheritance**  
-    A child class inherits from a parent class, and another child class inherits from this child class.
+##### c.**Multilevel Inheritance**  
+A child class inherits from a parent class, and another child class inherits from this child class.
 
-#### Example:
+Example:
 ```python
 class Grandparent:
         def func1(self):
@@ -133,10 +133,10 @@ print(obj.func2())  # Output: This is the parent class.
 print(obj.func3())  # Output: This is the child class.
 ```
 
-**Hierarchical Inheritance**  
-    Multiple child classes inherit from a single parent class.
+##### d.**Hierarchical Inheritance**  
+Multiple child classes inherit from a single parent class.
 
-#### Example:
+Example:
 ```python
 class Parent:
         def func1(self):
@@ -158,10 +158,10 @@ print(obj2.func1())  # Output: This is the parent class.
 print(obj2.func3())  # Output: This is Child2.
 ```
 
-**Hybrid Inheritance**  
-    A combination of two or more types of inheritance.
+##### e.**Hybrid Inheritance**  
+A combination of two or more types of inheritance.
 
-#### Example:
+Example:
 ```python
 class Parent:
         def func1(self):
@@ -194,7 +194,7 @@ Understanding these types of inheritance helps in designing a robust and reusabl
 ### 4. **Polymorphism**
 Polymorphism allows methods in different classes to have the same name but behave differently.
 
-#### Example:
+Example:
 ```python
 class Bird:
     def fly(self):
@@ -215,7 +215,7 @@ print(penguin.fly())   # Output: I cannot fly.
 ### 5. **Abstraction**
 Abstraction hides implementation details and shows only the essential features of an object. In Python, abstraction can be achieved using abstract base classes (ABC).
 
-#### Example:
+Example:
 ```python
 from abc import ABC, abstractmethod
 

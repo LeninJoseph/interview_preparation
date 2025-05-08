@@ -34,5 +34,3 @@ Behavioral patterns are concerned with communication between objects. Examples i
 
 ## Conclusion
 Design patterns are an essential tool for software developers. By understanding and applying them, you can create robust, flexible, and maintainable software systems.
-
-[Patterns used in Project]()
