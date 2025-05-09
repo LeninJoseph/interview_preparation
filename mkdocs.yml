@@ -12,61 +12,91 @@ theme:
 
 nav:
   - Home: index.md
+  - JavaScript:
+        - Introduction: javascript/index.md
+        - JS Basics: javascript/javascript_docs/js_basics.md
+        - JS Advanced: javascript/javascript_docs/js_advanced.md
+        - JS Concepts: javascript/javascript_docs/js_concepts.md
+        - JS Design Patterns: javascript/javascript_docs/js_design_patterns.md
+        - JS Learn: javascript/javascript_docs/js_learn.md
+        - JS Mid : javascript/javascript_docs/js_mid_learn.md
   - React:
-      - Introduction: react/index.md
-      - Learn JS: react/react_docs/js_learn.md
-      - JS Mid Level: react/react_docs/js_mid_learn.md
-      - Learn React: react/react_docs/react_learn.md
-      - ES6 Features: react/react_docs/es6_features.md
-      - Technical Topics: react/react_docs/technical_topics.md
-      - Behaviral Topics: react/react_docs/behavioral_questions.md
+        - Introduction: react/index.md
+        - React Basics: react/react_docs/react_basics.md
+        - React Advanced: react/react_docs/react_advanced.md
+        - React Concepts: react/react_docs/react_concepts.md
+        - React Design Patterns: react/react_docs/react_design_patterns.md
+        - React Performance: react/react_docs/react_performance.md
+        - React Testing: react/react_docs/react_testing.md
+        - React Hooks: react/react_docs/react_hooks.md
+        - React Router: react/react_docs/react_router.md
+        - React Redux: react/react_docs/react_redux.md
+        - React Context API: react/react_docs/react_context_api.md
+        - React PropTypes: react/react_docs/react_proptypes.md
+        - React Error Boundaries: react/react_docs/react_error_boundaries.md
+        - React Refs: react/react_docs/react_refs.md
+        - React Portals: react/react_docs/react_portals.md
+        - React Fragments: react/react_docs/react_fragments.md
+        - React Higher Order Components: react/react_docs/react_higher_order_components.md
+        - React Render Props: react/react_docs/react_render_props.md
+        - React Suspense: react/react_docs/react_suspense.md
+        - React Concurrent Mode: react/react_docs/react_concurrent_mode.md
+        - React Server Components: react/react_docs/react_server_components.md
+        - React Code Splitting: react/react_docs/react_code_splitting.md
+        - React Lazy Loading: react/react_docs/react_lazy_loading.md
+        - React Memoization: react/react_docs/react_memoization.md
+        - React Virtual DOM: react/react_docs/react_virtual_dom.md
+        - React Reconciliation: react/react_docs/react_reconciliation.md
+        - Learn React: react/react_docs/react_learn.md
+        - Technical Topics: react/react_docs/technical_topics.md
+        - Behaviral Topics: react/react_docs/behavioral_questions.md
   - Node:
-      - Introduction: node/index.md
-      - Questions: node/node_questions.md
+        - Introduction: node/index.md
+        - Questions: node/node_questions.md
   - Python:
-      - Introduction: python/index.md
-      - Python Basics: python/python_docs/basic_concepts.md
-      - OOPs: python/python_docs/oops.md
-      - Python Fundamentals: python/python_docs/python_fundamentals.md
-      - Data Structures: python/python_docs/data_structure.md
-      - Algorithms: python/python_docs/algorithms.md
-      - Advanced Concepts:
-          - Multithreading: python/python_docs/advanced_concepts/multithreading.md
-          - Multiprocessing: python/python_docs/advanced_concepts/multiprocessing.md
-          - Asyncio: python/python_docs/advanced_concepts/asyncio.md
-          - Memory Management: python/python_docs/advanced_concepts/memory_management.md
-          - Iterators: python/python_docs/advanced_concepts/iterators.md
-          - Generators: python/python_docs/advanced_concepts/generators.md
-          - Decorators: python/python_docs/advanced_concepts/decorators.md
-          - Context Managers: python/python_docs/advanced_concepts/context_managers.md
-          - Metaclasses: python/python_docs/advanced_concepts/metaclasses.md
-          - Caching: python/python_docs/advanced_concepts/caching.md
-      - Fast API: python/python_docs/fast-api.md
+        - Introduction: python/index.md
+        - Python Basics: python/python_docs/basic_concepts.md
+        - OOPs: python/python_docs/oops.md
+        - Python Fundamentals: python/python_docs/python_fundamentals.md
+        - Data Structures: python/python_docs/data_structure.md
+        - Algorithms: python/python_docs/algorithms.md
+        - Advanced Concepts:
+            - Multithreading: python/python_docs/advanced_concepts/multithreading.md
+            - Multiprocessing: python/python_docs/advanced_concepts/multiprocessing.md
+            - Asyncio: python/python_docs/advanced_concepts/asyncio.md
+            - Memory Management: python/python_docs/advanced_concepts/memory_management.md
+            - Iterators: python/python_docs/advanced_concepts/iterators.md
+            - Generators: python/python_docs/advanced_concepts/generators.md
+            - Decorators: python/python_docs/advanced_concepts/decorators.md
+            - Context Managers: python/python_docs/advanced_concepts/context_managers.md
+            - Metaclasses: python/python_docs/advanced_concepts/metaclasses.md
+            - Caching: python/python_docs/advanced_concepts/caching.md
+        - Fast API: python/python_docs/fast-api.md
   - Database:
-      - Introduction: database/index.md
-      - SQL:
-          - Joins: database/joins.md
-          - Concepts: database/db_concepts.md
-      - No SQL:
-          - Introduction: database/nosql_concepts.md
+        - Introduction: database/index.md
+        - SQL:
+            - Joins: database/joins.md
+            - Concepts: database/db_concepts.md
+        - No SQL:
+            - Introduction: database/nosql_concepts.md
   - General:
-      - General Concepts: general/index.md
-      - Auth: general/auth.md
-      - Sockets: general/sockets.md
-      - Security best practices: general/security_best_practices.md
-      - Middleware: general/middleware.md
-      - Caching: general/caching.md
-      - Load Balancing: general/load_balancing.md
+        - General Concepts: general/index.md
+        - Auth: general/auth.md
+        - Sockets: general/sockets.md
+        - Security best practices: general/security_best_practices.md
+        - Middleware: general/middleware.md
+        - Caching: general/caching.md
+        - Load Balancing: general/load_balancing.md
 
   - Design Patterns:
-      - Introduction: design_patterns/index.md
-      - Real Time Examples:
-          - API Gateway Pattern: design_patterns/real_time_patterns/api_gateway_pattern.md
-          - Dependancy Injection Pattern: design_patterns/real_time_patterns/dependancy_injection_pattern.md
-          - Factory Pattern: design_patterns/real_time_patterns/factory_pattern.md
-          - Rule Engine Pattern: design_patterns/real_time_patterns/rule_engine_pattern.md
-          - Template Method Pattern: design_patterns/real_time_patterns/template_method_pattern.md
-          - Transformer Pattern: design_patterns/real_time_patterns/transformer_pattern.md
-          - Resolver Pattern: design_patterns/real_time_patterns/resolver_pattern.md
+        - Introduction: design_patterns/index.md
+        - Real Time Examples:
+            - API Gateway Pattern: design_patterns/real_time_patterns/api_gateway_pattern.md
+            - Dependancy Injection Pattern: design_patterns/real_time_patterns/dependancy_injection_pattern.md
+            - Factory Pattern: design_patterns/real_time_patterns/factory_pattern.md
+            - Rule Engine Pattern: design_patterns/real_time_patterns/rule_engine_pattern.md
+            - Template Method Pattern: design_patterns/real_time_patterns/template_method_pattern.md
+            - Transformer Pattern: design_patterns/real_time_patterns/transformer_pattern.md
+            - Resolver Pattern: design_patterns/real_time_patterns/resolver_pattern.md
 plugins:
   - search

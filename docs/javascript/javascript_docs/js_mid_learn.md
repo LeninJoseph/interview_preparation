@@ -125,6 +125,7 @@ function sum(...nums) {
 A higher-order function is a function that either takes one or more functions as arguments, returns a function, or both. These functions enable functional programming patterns and are commonly used in JavaScript.
 
 Examples of higher-order functions:
+
 - **`.map()`**: Takes a callback function and applies it to each element in an array.
 - **`.filter()`**: Takes a callback function to filter elements based on a condition.
 - **`.reduce()`**: Takes a callback function to reduce an array to a single value.

@@ -8,6 +8,7 @@ The `document` object represents the HTML document loaded in the browser. It all
 
 ### What is a variable scope in JavaScript?
 Variable scope determines where a variable is accessible. JavaScript has three types of scope:
+
 - **Global Scope**: Accessible everywhere.
 - **Function Scope**: Accessible only within the function.
 - **Block Scope**: Accessible only within a block (`{}`), introduced with `let` and `const`.
@@ -102,7 +103,26 @@ Timeout
 ```
 
 ### What is a promise?
-A Promise is an object representing the eventual completion or failure of an asynchronous operation.
+A Promise is an object representing the eventual completion or failure of an asynchronous operation. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. Promises have three states:
+
+- **Pending**: The initial state, neither fulfilled nor rejected.
+- **Fulfilled**: The operation completed successfully.
+- **Rejected**: The operation failed.
+
+```javascript
+const promise = new Promise((resolve, reject) => {
+  const success = true;
+  if (success) {
+    resolve('Operation successful');
+  } else {
+    reject('Operation failed');
+  }
+});
+
+promise
+  .then((result) => console.log(result)) // Logs: Operation successful
+  .catch((error) => console.error(error));
+```
 
 ### What is callback hell?
 Callback hell refers to nested callbacks that make code difficult to read and maintain.

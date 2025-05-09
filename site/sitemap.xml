@@ -2,70 +2,306 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/database/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/database/db_concepts/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/database/joins/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/database/nosql_concepts/</loc>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/design_patterns/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/design_patterns/real_time_patterns/api_gateway_pattern/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/design_patterns/real_time_patterns/dependancy_injection_pattern/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/design_patterns/real_time_patterns/factory_pattern/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/design_patterns/real_time_patterns/resolver_pattern/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/design_patterns/real_time_patterns/rule_engine_pattern/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/design_patterns/real_time_patterns/template_method_pattern/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/design_patterns/real_time_patterns/transformer_pattern/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/general/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/general/auth/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/general/caching/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/general/load_balancing/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/general/middleware/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/general/security_best_practices/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/general/sockets/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/javascript/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/javascript/javascript_docs/es6_features/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/javascript/javascript_docs/js_advanced/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/javascript/javascript_docs/js_basics/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/javascript/javascript_docs/js_concepts/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/javascript/javascript_docs/js_design_patterns/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/javascript/javascript_docs/js_learn/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/javascript/javascript_docs/js_mid_learn/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/node/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/node/node_questions/</loc>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/python/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/algorithms/</loc>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/basic_concepts/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/data_structure/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/fast-api/</loc>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/oops/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/python_fundamentals/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/advanced_concepts/asyncio/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/advanced_concepts/caching/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/advanced_concepts/context_managers/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/advanced_concepts/decorators/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/advanced_concepts/generators/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/advanced_concepts/iterators/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/advanced_concepts/memory_management/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/advanced_concepts/metaclasses/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/advanced_concepts/multiprocessing/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/python/python_docs/advanced_concepts/multithreading/</loc>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/react/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/behavioral_questions/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
-         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/js_learn/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_advanced/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_basics/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_code_splitting/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_concepts/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_concurrent_mode/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_context_api/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_design_patterns/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_error_boundaries/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_fragments/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_higher_order_components/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_hooks/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_lazy_loading/</loc>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_learn/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_memoization/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_performance/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_portals/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_proptypes/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_reconciliation/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_redux/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_refs/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_render_props/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_router/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_server_components/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_suspense/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_testing/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/react_virtual_dom/</loc>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://leninjoseph.github.io/interview_preparation/react/react_docs/technical_topics/</loc>
-         <lastmod>2025-05-08</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
 </urlset>

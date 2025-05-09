@@ -34,3 +34,8 @@ mkdocs serve -a 0.0.0.0:8000
 ```
 
 6. browse the site under http://localhost:8000
+
+7. To Deploy 
+```
+mkdocs gh-deploy
+```
