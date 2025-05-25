@@ -3,28 +3,37 @@
 FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints. Below are some key aspects of working with FastAPI:
 
 ## Setting up a FastAPI Project
+
 To start a FastAPI project:
+
 1. Install FastAPI and an ASGI server like `uvicorn`:
-    ```bash
-    pip install fastapi uvicorn
-    ```
+
+```bash
+pip install fastapi uvicorn
+```
+
 2. Create a Python file and define your application:
-    ```python
-    from fastapi import FastAPI
 
-    app = FastAPI()
+```python
+from fastapi import FastAPI
 
-    @app.get("/")
-    def read_root():
-         return {"message": "Hello, FastAPI!"}
-    ```
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+     return {"message": "Hello, FastAPI!"}
+```
+
 3. Run the application:
-    ```bash
-    uvicorn main:app --reload
-    ```
+
+```bash
+uvicorn main:app --reload
+```
 
 ## Request/Response Models with Pydantic
+
 FastAPI uses Pydantic for data validation and serialization. Define models for request and response data:
+
 ```python
 from pydantic import BaseModel
 
@@ -39,28 +48,37 @@ def create_item(item: Item):
 ```
 
 ## Handling Routes, Query/Path/Body Parameters
+
 FastAPI makes it easy to handle different types of parameters:
+
 - **Path Parameters**:
-  ```python
-  @app.get("/items/{item_id}")
-  def read_item(item_id: int):
-        return {"item_id": item_id}
-  ```
+
+```python
+@app.get("/items/{item_id}")
+def read_item(item_id: int):
+     return {"item_id": item_id}
+```
+
 - **Query Parameters**:
-  ```python
-  @app.get("/items/")
-  def read_items(skip: int = 0, limit: int = 10):
-        return {"skip": skip, "limit": limit}
-  ```
+
+```python
+@app.get("/items/")
+def read_items(skip: int = 0, limit: int = 10):
+     return {"skip": skip, "limit": limit}
+```
+
 - **Body Parameters**:
-  ```python
-  @app.put("/items/{item_id}")
-  def update_item(item_id: int, item: Item):
-        return {"item_id": item_id, "item": item}
-  ```
+
+```python
+@app.put("/items/{item_id}")
+def update_item(item_id: int, item: Item):
+     return {"item_id": item_id, "item": item}
+```
 
 ## Dependency Injection
+
 FastAPI provides a powerful dependency injection system to manage shared logic:
+
 ```python
 from fastapi import Depends
 
@@ -73,7 +91,9 @@ def read_items(dep=Depends(common_dependency)):
 ```
 
 ## Middleware and Exception Handling
+
 Add middleware for processing requests and responses globally:
+
 ```python
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -84,7 +104,9 @@ app.add_middleware(
      allow_headers=["*"],
 )
 ```
+
 Handle exceptions with custom logic:
+
 ```python
 from fastapi import HTTPException
 
@@ -94,7 +116,9 @@ def raise_error():
 ```
 
 ## Background Tasks and Async Support
+
 FastAPI supports asynchronous programming and background tasks:
+
 ```python
 from fastapi import BackgroundTasks
 
@@ -109,6 +133,7 @@ def log_message(message: str, background_tasks: BackgroundTasks):
 ```
 
 FastAPI's async capabilities allow you to write non-blocking code for better performance:
+
 ```python
 @app.get("/async/")
 async def async_endpoint():
