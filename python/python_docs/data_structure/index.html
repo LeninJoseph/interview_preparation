@@ -2144,6 +2144,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced_concepts/dunder_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dunder Methods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2408,6 +2431,29 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../database/db_optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DB Optimation
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -3319,21 +3365,17 @@ ll.display()  # 1 -&gt; 2 -&gt; 3 -&gt; None
 <h3 id="stack">Stack:</h3>
 <ul>
 <li><strong>Definition</strong>: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle.</li>
-<li><strong>Operations</strong>:<ul>
+<li><strong>Operations</strong>:</li>
 <li><code>push</code>: Add an element to the top of the stack.</li>
 <li><code>pop</code>: Remove the top element from the stack.</li>
-</ul>
-</li>
 <li><strong>Use Case</strong>: Useful for scenarios like undo operations, parsing expressions, and backtracking.</li>
 </ul>
 <h3 id="queue">Queue:</h3>
 <ul>
 <li><strong>Definition</strong>: A queue is a linear data structure that follows the First In, First Out (FIFO) principle.</li>
-<li><strong>Operations</strong>:<ul>
+<li><strong>Operations</strong>:</li>
 <li><code>enqueue</code>: Add an element to the end of the queue.</li>
 <li><code>dequeue</code>: Remove the front element from the queue.</li>
-</ul>
-</li>
 <li><strong>Use Case</strong>: Useful for scenarios like task scheduling, breadth-first search, and buffering.</li>
 </ul>
 <hr />
@@ -3375,27 +3417,25 @@ ll.display()  # 1 -&gt; 2 -&gt; 3 -&gt; None
 <p>A graph is a collection of nodes (vertices) connected by edges. It can be directed or undirected.</p>
 <h3 id="representation">Representation:</h3>
 <ol>
-<li>
-<p><strong>Adjacency List</strong>:
-     <code>python
-     graph = {
-             'A': ['B', 'C'],
-             'B': ['A', 'D'],
-             'C': ['A', 'D'],
-             'D': ['B', 'C']
-     }</code></p>
-</li>
-<li>
-<p><strong>Adjacency Matrix</strong>:
-     <code>python
-     graph = [
-             [0, 1, 1, 0],  # A
-             [1, 0, 0, 1],  # B
-             [1, 0, 0, 1],  # C
-             [0, 1, 1, 0]   # D
-     ]</code></p>
-</li>
+<li><strong>Adjacency List</strong>:</li>
 </ol>
+<pre><code class="language-python">graph = {
+        'A': ['B', 'C'],
+        'B': ['A', 'D'],
+        'C': ['A', 'D'],
+        'D': ['B', 'C']
+}
+</code></pre>
+<ol>
+<li><strong>Adjacency Matrix</strong>:</li>
+</ol>
+<pre><code class="language-python">graph = [
+        [0, 1, 1, 0],  # A
+        [1, 0, 0, 1],  # B
+        [1, 0, 0, 1],  # C
+        [0, 1, 1, 0]   # D
+]
+</code></pre>
 <hr />
 <h2 id="difference-between-dictionary-and-set-in-python">Difference Between Dictionary and Set in Python</h2>
 <table>

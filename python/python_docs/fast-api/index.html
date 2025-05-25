@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/python/python_docs/fast-api/">
       
       
-        <link rel="prev" href="../advanced_concepts/caching/">
+        <link rel="prev" href="../advanced_concepts/dunder_methods/">
       
       
         <link rel="next" href="../../../database/">
@@ -1862,6 +1862,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced_concepts/dunder_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dunder Methods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2222,6 +2245,29 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../database/db_optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DB Optimation
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2823,25 +2869,28 @@
 <h1 id="fastapi-guide">FastAPI Guide</h1>
 <p>FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints. Below are some key aspects of working with FastAPI:</p>
 <h2 id="setting-up-a-fastapi-project">Setting up a FastAPI Project</h2>
-<p>To start a FastAPI project:
-1. Install FastAPI and an ASGI server like <code>uvicorn</code>:
-    <code>bash
-    pip install fastapi uvicorn</code>
-2. Create a Python file and define your application:
-    ```python
-    from fastapi import FastAPI</p>
-<pre><code>app = FastAPI()
-
-@app.get("/")
-def read_root():
-     return {"message": "Hello, FastAPI!"}
-```
+<p>To start a FastAPI project:</p>
+<ol>
+<li>Install FastAPI and an ASGI server like <code>uvicorn</code>:</li>
+</ol>
+<pre><code class="language-bash">pip install fastapi uvicorn
 </code></pre>
 <ol>
-<li>Run the application:
-    <code>bash
-    uvicorn main:app --reload</code></li>
+<li>Create a Python file and define your application:</li>
 </ol>
+<pre><code class="language-python">from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get(&quot;/&quot;)
+def read_root():
+     return {&quot;message&quot;: &quot;Hello, FastAPI!&quot;}
+</code></pre>
+<ol>
+<li>Run the application:</li>
+</ol>
+<pre><code class="language-bash">uvicorn main:app --reload
+</code></pre>
 <h2 id="requestresponse-models-with-pydantic">Request/Response Models with Pydantic</h2>
 <p>FastAPI uses Pydantic for data validation and serialization. Define models for request and response data:</p>
 <pre><code class="language-python">from pydantic import BaseModel
@@ -2856,22 +2905,28 @@ def create_item(item: Item):
      return {&quot;item&quot;: item}
 </code></pre>
 <h2 id="handling-routes-querypathbody-parameters">Handling Routes, Query/Path/Body Parameters</h2>
-<p>FastAPI makes it easy to handle different types of parameters:
-- <strong>Path Parameters</strong>:
-  <code>python
-  @app.get("/items/{item_id}")
-  def read_item(item_id: int):
-        return {"item_id": item_id}</code>
-- <strong>Query Parameters</strong>:
-  <code>python
-  @app.get("/items/")
-  def read_items(skip: int = 0, limit: int = 10):
-        return {"skip": skip, "limit": limit}</code>
-- <strong>Body Parameters</strong>:
-  <code>python
-  @app.put("/items/{item_id}")
-  def update_item(item_id: int, item: Item):
-        return {"item_id": item_id, "item": item}</code></p>
+<p>FastAPI makes it easy to handle different types of parameters:</p>
+<ul>
+<li><strong>Path Parameters</strong>:</li>
+</ul>
+<pre><code class="language-python">@app.get(&quot;/items/{item_id}&quot;)
+def read_item(item_id: int):
+     return {&quot;item_id&quot;: item_id}
+</code></pre>
+<ul>
+<li><strong>Query Parameters</strong>:</li>
+</ul>
+<pre><code class="language-python">@app.get(&quot;/items/&quot;)
+def read_items(skip: int = 0, limit: int = 10):
+     return {&quot;skip&quot;: skip, &quot;limit&quot;: limit}
+</code></pre>
+<ul>
+<li><strong>Body Parameters</strong>:</li>
+</ul>
+<pre><code class="language-python">@app.put(&quot;/items/{item_id}&quot;)
+def update_item(item_id: int, item: Item):
+     return {&quot;item_id&quot;: item_id, &quot;item&quot;: item}
+</code></pre>
 <h2 id="dependency-injection">Dependency Injection</h2>
 <p>FastAPI provides a powerful dependency injection system to manage shared logic:</p>
 <pre><code class="language-python">from fastapi import Depends

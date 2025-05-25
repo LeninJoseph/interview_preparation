@@ -2009,6 +2009,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced_concepts/dunder_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dunder Methods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2273,6 +2296,29 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../database/db_optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DB Optimation
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2928,183 +2974,173 @@
 <ul>
 <li>
 <p><strong>int</strong>: Represents integers.<br />
-    Example: <code>x = 10</code></p>
+   Example: <code>x = 10</code></p>
 </li>
 <li>
 <p><strong>float</strong>: Represents floating-point numbers.<br />
-    Example: <code>pi = 3.14</code></p>
+   Example: <code>pi = 3.14</code></p>
 </li>
 <li>
 <p><strong>str</strong>: Represents strings.<br />
-    Example: <code>name = "Python"</code></p>
+   Example: <code>name = "Python"</code></p>
 </li>
 <li>
 <p><strong>list</strong>: Ordered, mutable collection.<br />
-    Example: <code>fruits = ["apple", "banana", "cherry"]</code></p>
+   Example: <code>fruits = ["apple", "banana", "cherry"]</code></p>
 </li>
 <li>
 <p><strong>tuple</strong>: Ordered, immutable collection.<br />
-    Example: <code>coordinates = (10, 20)</code></p>
+   Example: <code>coordinates = (10, 20)</code></p>
 </li>
 <li>
 <p><strong>set</strong>: Unordered, unique collection.<br />
-    Example: <code>unique_numbers = {1, 2, 3}</code></p>
+   Example: <code>unique_numbers = {1, 2, 3}</code></p>
 </li>
 <li>
 <p><strong>dict</strong>: Key-value pairs.<br />
-    Example: <code>person = {"name": "John", "age": 30}</code></p>
+   Example: <code>person = {"name": "John", "age": 30}</code></p>
 </li>
 </ul>
 <hr />
 <h2 id="2-control-flow">2. Control Flow</h2>
 <p>Control flow statements allow conditional execution and iteration.</p>
 <ul>
-<li>
-<p><strong>if-else</strong>:<br />
-<code>python
-    if x &gt; 0:
-            print("Positive")
-    else:
-            print("Non-positive")</code></p>
-</li>
-<li>
-<p><strong>for loop</strong>:<br />
-<code>python
-    for i in range(5):
-            print(i)</code></p>
-</li>
-<li>
-<p><strong>while loop</strong>:<br />
-<code>python
-    count = 0
-    while count &lt; 5:
-            print(count)
-            count += 1</code></p>
-</li>
-<li>
-<p><strong>break</strong>: Exit a loop.<br />
-<code>python
-    for i in range(5):
-            if i == 3:
-                    break
-            print(i)</code></p>
-</li>
-<li>
-<p><strong>continue</strong>: Skip the current iteration.<br />
-<code>python
-    for i in range(5):
-            if i == 3:
-                    continue
-            print(i)</code></p>
-</li>
+<li><strong>if-else</strong>:</li>
 </ul>
+<pre><code class="language-python">if x &gt; 0:
+        print(&quot;Positive&quot;)
+else:
+        print(&quot;Non-positive&quot;)
+</code></pre>
+<ul>
+<li><strong>for loop</strong>:</li>
+</ul>
+<pre><code class="language-python">for i in range(5):
+        print(i)
+</code></pre>
+<ul>
+<li><strong>while loop</strong>:</li>
+</ul>
+<pre><code class="language-python">count = 0
+while count &lt; 5:
+        print(count)
+        count += 1
+</code></pre>
+<ul>
+<li><strong>break</strong>: Exit a loop.</li>
+</ul>
+<pre><code class="language-python">for i in range(5):
+        if i == 3:
+                break
+        print(i)
+</code></pre>
+<ul>
+<li><strong>continue</strong>: Skip the current iteration.</li>
+</ul>
+<pre><code class="language-python">for i in range(5):
+        if i == 3:
+                continue
+        print(i)
+</code></pre>
 <hr />
 <h2 id="3-functions">3. Functions</h2>
 <p>Functions encapsulate reusable code.</p>
 <ul>
-<li>
-<p><strong>def</strong>: Define a function.<br />
-<code>python
-    def greet(name):
-            return f"Hello, {name}!"</code></p>
-</li>
-<li>
-<p><strong>lambda</strong>: Anonymous functions.<br />
-<code>python
-    square = lambda x: x * x
-    print(square(5))</code></p>
-</li>
-<li>
-<p><strong>*args</strong>: Variable-length positional arguments.<br />
-<code>python
-    def add(*args):
-            return sum(args)</code></p>
-</li>
-<li>
-<p><strong>**kwargs</strong>: Variable-length keyword arguments.<br />
-<code>python
-    def print_info(**kwargs):
-            for key, value in kwargs.items():
-                    print(f"{key}: {value}")</code></p>
-</li>
+<li><strong>def</strong>: Define a function.</li>
 </ul>
+<pre><code class="language-python">def greet(name):
+        return f&quot;Hello, {name}!&quot;
+</code></pre>
+<ul>
+<li><strong>lambda</strong>: Anonymous functions.</li>
+</ul>
+<pre><code class="language-python">square = lambda x: x * x
+print(square(5))
+</code></pre>
+<ul>
+<li><strong>*args</strong>: Variable-length positional arguments.</li>
+</ul>
+<pre><code class="language-python">def add(*args):
+        return sum(args)
+</code></pre>
+<ul>
+<li><strong>**kwargs</strong>: Variable-length keyword arguments.</li>
+</ul>
+<pre><code class="language-python">def print_info(**kwargs):
+        for key, value in kwargs.items():
+                print(f&quot;{key}: {value}&quot;)
+</code></pre>
 <hr />
 <h2 id="4-comprehensions">4. Comprehensions</h2>
 <p>Comprehensions provide a concise way to create collections.</p>
 <ul>
-<li>
-<p><strong>List comprehension</strong>:<br />
-<code>python
-    squares = [x**2 for x in range(5)]</code></p>
-</li>
-<li>
-<p><strong>Dictionary comprehension</strong>:<br />
-<code>python
-    square_dict = {x: x**2 for x in range(5)}</code></p>
-</li>
-<li>
-<p><strong>Set comprehension</strong>:<br />
-<code>python
-    unique_squares = {x**2 for x in range(5)}</code></p>
-</li>
+<li><strong>List comprehension</strong>:</li>
 </ul>
+<pre><code class="language-python">squares = [x**2 for x in range(5)]
+</code></pre>
+<ul>
+<li><strong>Dictionary comprehension</strong>:</li>
+</ul>
+<pre><code class="language-python">square_dict = {x: x**2 for x in range(5)}
+</code></pre>
+<ul>
+<li><strong>Set comprehension</strong>:</li>
+</ul>
+<pre><code class="language-python">unique_squares = {x**2 for x in range(5)}
+</code></pre>
 <hr />
 <h2 id="5-exception-handling">5. Exception Handling</h2>
 <p>Handle runtime errors gracefully.</p>
 <ul>
-<li>
-<p><strong>try-except-finally</strong>:<br />
-<code>python
-    try:
-            result = 10 / 0
-    except ZeroDivisionError as e:
-            print("Error:", e)
-    finally:
-            print("Execution complete")</code></p>
-</li>
-<li>
-<p><strong>Custom exceptions</strong>:<br />
-    ```python
-    class CustomError(Exception):
-            pass</p>
-<p>raise CustomError("This is a custom exception")
-```</p>
-</li>
+<li><strong>try-except-finally</strong>:</li>
 </ul>
+<pre><code class="language-python">try:
+        result = 10 / 0
+except ZeroDivisionError as e:
+        print(&quot;Error:&quot;, e)
+finally:
+        print(&quot;Execution complete&quot;)
+</code></pre>
+<ul>
+<li><strong>Custom exceptions</strong>:</li>
+</ul>
+<pre><code class="language-python">class CustomError(Exception):
+        pass
+
+raise CustomError(&quot;This is a custom exception&quot;)
+</code></pre>
 <hr />
 <h2 id="6-file-handling">6. File Handling</h2>
 <p>Work with files using Python's built-in functions.</p>
 <ul>
-<li>
-<p><strong>open(), read(), write()</strong>:<br />
-<code>python
-    with open("example.txt", "w") as file:
-            file.write("Hello, World!")</code></p>
-</li>
-<li>
-<p><strong>with statement</strong>: Ensures proper resource management.<br />
-<code>python
-    with open("example.txt", "r") as file:
-            content = file.read()</code></p>
-</li>
+<li><strong>open(), read(), write()</strong>:</li>
 </ul>
+<pre><code class="language-python">with open(&quot;example.txt&quot;, &quot;w&quot;) as file:
+        file.write(&quot;Hello, World!&quot;)
+</code></pre>
+<ul>
+<li><strong>with statement</strong>: Ensures proper resource management.</li>
+</ul>
+<pre><code class="language-python">with open(&quot;example.txt&quot;, &quot;r&quot;) as file:
+        content = file.read()
+</code></pre>
 <hr />
 <h2 id="7-modules-packages">7. Modules &amp; Packages</h2>
 <p>Organize and reuse code.</p>
 <ul>
-<li>
-<p><strong>import</strong>: Import modules.<br />
-<code>python
-    import math
-    print(math.sqrt(16))</code></p>
-</li>
+<li><strong>import</strong>: Import modules.</li>
+</ul>
+<pre><code class="language-python">import math
+print(math.sqrt(16))
+</code></pre>
+<ul>
 <li>
 <p><strong>pip</strong>: Install packages.<br />
-    Command: <code>pip install requests</code></p>
+  Command: <code>pip install requests</code></p>
 </li>
 <li>
 <p><strong>virtualenv</strong>: Create isolated environments.<br />
-    Command: <code>virtualenv myenv</code></p>
+  Command: <code>virtualenv myenv</code></p>
 </li>
 </ul>
 <hr />
@@ -3112,80 +3148,67 @@
 <h3 id="decorators">Decorators</h3>
 <p>Modify or extend the behavior of functions.</p>
 <ul>
-<li>
-<p><strong>@staticmethod</strong>: Define a static method.<br />
-<code>python
-    class MyClass:
-            @staticmethod
-            def greet():
-                    print("Hello!")</code></p>
-</li>
-<li>
-<p><strong>@classmethod</strong>: Define a class method.<br />
-<code>python
-    class MyClass:
-            @classmethod
-            def create_instance(cls):
-                    return cls()</code></p>
-</li>
-<li>
-<p><strong>@property</strong>: Define a property.<br />
-    ```python
-    class MyClass:
-            def <strong>init</strong>(self, value):
-                    self._value = value</p>
-<pre><code>    @property
-    def value(self):
-            return self._value
-</code></pre>
-<p>```</p>
-</li>
+<li><strong>@staticmethod</strong>: Define a static method.</li>
 </ul>
+<pre><code class="language-python">class MyClass:
+        @staticmethod
+        def greet():
+                print(&quot;Hello!&quot;)
+</code></pre>
+<ul>
+<li><strong>@classmethod</strong>: Define a class method.</li>
+</ul>
+<pre><code class="language-python">class MyClass:
+        @classmethod
+        def create_instance(cls):
+                return cls()
+</code></pre>
+<ul>
+<li><strong>@property</strong>: Define a property.</li>
+</ul>
+<pre><code class="language-python">class MyClass:
+        def __init__(self, value):
+                self._value = value
+
+        @property
+        def value(self):
+                return self._value
+</code></pre>
 <h3 id="generators">Generators</h3>
 <p>Generate values lazily using <code>yield</code>.</p>
 <ul>
-<li>
-<p><strong>yield keyword</strong>:<br />
-    ```python
-    def generate_numbers():
-            for i in range(5):
-                    yield i</p>
-<p>for num in generate_numbers():
-        print(num)
-```</p>
-</li>
+<li><strong>yield keyword</strong>:</li>
 </ul>
+<pre><code class="language-python">def generate_numbers():
+        for i in range(5):
+                yield i
+
+for num in generate_numbers():
+        print(num)
+</code></pre>
 <h2 id="9-__slots__-in-python">9. <code>__slots__</code> in Python</h2>
 <p><code>__slots__</code> is a mechanism to restrict the attributes that an object can have, which can save memory by preventing the creation of a dynamic dictionary (<code>__dict__</code>) for each instance.</p>
-<ul>
-<li>
-<p><strong>Usage</strong>:<br />
-    ```python
-    class MyClass:
-        <strong>slots</strong> = ['name', 'age']  # Restrict attributes to 'name' and 'age'</p>
-<pre><code>def __init__(self, name, age):
-    self.name = name
-    self.age = age
-</code></pre>
-<p>obj = MyClass("Alice", 30)
+<p><strong>Usage</strong>:</p>
+<pre><code class="language-python">class MyClass:
+    __slots__ = ['name', 'age']  # Restrict attributes to 'name' and 'age'
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+obj = MyClass(&quot;Alice&quot;, 30)
 print(obj.name)  # Output: Alice
-obj.address = "123 Street"  # Raises AttributeError
-```</p>
-</li>
-<li>
+obj.address = &quot;123 Street&quot;  # Raises AttributeError
+</code></pre>
 <p><strong>Benefits</strong>:</p>
 <ul>
 <li>Reduces memory usage for a large number of instances.</li>
 <li>Prevents accidental creation of new attributes.</li>
 </ul>
-</li>
-<li>
 <p><strong>Limitations</strong>:</p>
 <ul>
 <li>Cannot use <code>__slots__</code> with classes that inherit from a class without <code>__slots__</code>.</li>
 <li>Does not support dynamic attributes unless explicitly defined in <code>__slots__</code>.</li>
-</ul>
-</li>
 </ul>
 
 

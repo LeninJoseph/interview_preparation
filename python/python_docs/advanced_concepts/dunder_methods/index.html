@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/react/react_docs/react_code_splitting/">
+        <link rel="canonical" href="https://leninjoseph.github.io/interview_preparation/python/python_docs/advanced_concepts/dunder_methods/">
       
       
-        <link rel="prev" href="../react_server_components/">
+        <link rel="prev" href="../caching/">
       
       
-        <link rel="next" href="../react_lazy_loading/">
+        <link rel="next" href="../../fast-api/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>React Code Splitting - Interview Preparation</title>
+        <title>Dunder Methods - Interview Preparation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#react-code-splitting" class="md-skip">
+        <a href="#dunder-methods-in-python" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +86,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Interview Preparation" class="md-header__button md-logo" aria-label="Interview Preparation" data-md-component="logo">
+    <a href="../../../.." title="Interview Preparation" class="md-header__button md-logo" aria-label="Interview Preparation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              React Code Splitting
+              Dunder Methods
             
           </span>
         </div>
@@ -179,7 +179,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -200,7 +200,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../javascript/" class="md-tabs__link">
+        <a href="../../../../javascript/" class="md-tabs__link">
           
   
   
@@ -216,13 +216,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../react/" class="md-tabs__link">
           
   
   
@@ -242,7 +240,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../node/" class="md-tabs__link">
+        <a href="../../../../node/" class="md-tabs__link">
           
   
   
@@ -258,11 +256,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../python/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -282,7 +282,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../database/" class="md-tabs__link">
+        <a href="../../../../database/" class="md-tabs__link">
           
   
   
@@ -302,7 +302,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../general/" class="md-tabs__link">
+        <a href="../../../../general/" class="md-tabs__link">
           
   
   
@@ -322,7 +322,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../design_patterns/" class="md-tabs__link">
+        <a href="../../../../design_patterns/" class="md-tabs__link">
           
   
   
@@ -356,7 +356,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Interview Preparation" class="md-nav__button md-logo" aria-label="Interview Preparation" data-md-component="logo">
+    <a href="../../../.." title="Interview Preparation" class="md-nav__button md-logo" aria-label="Interview Preparation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -374,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -437,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/" class="md-nav__link">
+      <a href="../../../../javascript/" class="md-nav__link">
         
   
   
@@ -460,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/javascript_docs/js_basics/" class="md-nav__link">
+      <a href="../../../../javascript/javascript_docs/js_basics/" class="md-nav__link">
         
   
   
@@ -483,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/javascript_docs/js_advanced/" class="md-nav__link">
+      <a href="../../../../javascript/javascript_docs/js_advanced/" class="md-nav__link">
         
   
   
@@ -506,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/javascript_docs/js_concepts/" class="md-nav__link">
+      <a href="../../../../javascript/javascript_docs/js_concepts/" class="md-nav__link">
         
   
   
@@ -529,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/javascript_docs/js_design_patterns/" class="md-nav__link">
+      <a href="../../../../javascript/javascript_docs/js_design_patterns/" class="md-nav__link">
         
   
   
@@ -552,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/javascript_docs/js_learn/" class="md-nav__link">
+      <a href="../../../../javascript/javascript_docs/js_learn/" class="md-nav__link">
         
   
   
@@ -575,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/javascript_docs/js_mid_learn/" class="md-nav__link">
+      <a href="../../../../javascript/javascript_docs/js_mid_learn/" class="md-nav__link">
         
   
   
@@ -602,29 +602,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -637,7 +632,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             React
@@ -651,7 +646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../../react/" class="md-nav__link">
         
   
   
@@ -674,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_basics/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_basics/" class="md-nav__link">
         
   
   
@@ -697,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_advanced/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_advanced/" class="md-nav__link">
         
   
   
@@ -720,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_concepts/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_concepts/" class="md-nav__link">
         
   
   
@@ -743,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_design_patterns/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_design_patterns/" class="md-nav__link">
         
   
   
@@ -766,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_performance/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_performance/" class="md-nav__link">
         
   
   
@@ -789,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_testing/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_testing/" class="md-nav__link">
         
   
   
@@ -812,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_hooks/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_hooks/" class="md-nav__link">
         
   
   
@@ -835,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_router/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_router/" class="md-nav__link">
         
   
   
@@ -858,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_redux/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_redux/" class="md-nav__link">
         
   
   
@@ -881,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_context_api/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_context_api/" class="md-nav__link">
         
   
   
@@ -904,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_proptypes/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_proptypes/" class="md-nav__link">
         
   
   
@@ -927,7 +922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_error_boundaries/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_error_boundaries/" class="md-nav__link">
         
   
   
@@ -950,7 +945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_refs/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_refs/" class="md-nav__link">
         
   
   
@@ -973,7 +968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_portals/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_portals/" class="md-nav__link">
         
   
   
@@ -996,7 +991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_fragments/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_fragments/" class="md-nav__link">
         
   
   
@@ -1019,7 +1014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_higher_order_components/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_higher_order_components/" class="md-nav__link">
         
   
   
@@ -1042,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_render_props/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_render_props/" class="md-nav__link">
         
   
   
@@ -1065,7 +1060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_suspense/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_suspense/" class="md-nav__link">
         
   
   
@@ -1088,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_concurrent_mode/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_concurrent_mode/" class="md-nav__link">
         
   
   
@@ -1111,7 +1106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_server_components/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_server_components/" class="md-nav__link">
         
   
   
@@ -1131,32 +1126,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    React Code Splitting
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../react/react_docs/react_code_splitting/" class="md-nav__link">
         
   
   
@@ -1167,134 +1140,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-use-code-splitting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why Use Code Splitting?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#react-code-splitting-with-reactlazy" class="md-nav__link">
-    <span class="md-ellipsis">
-      React Code Splitting with React.lazy
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="React Code Splitting with React.lazy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-points" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Points:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-splitting-with-import" class="md-nav__link">
-    <span class="md-ellipsis">
-      Code Splitting with import()
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Code Splitting with import()">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tools-for-code-splitting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tools for Code Splitting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tools for Code Splitting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-with-react-router" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example with React Router
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best Practices
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1307,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_lazy_loading/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_lazy_loading/" class="md-nav__link">
         
   
   
@@ -1330,7 +1175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_memoization/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_memoization/" class="md-nav__link">
         
   
   
@@ -1353,7 +1198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_virtual_dom/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_virtual_dom/" class="md-nav__link">
         
   
   
@@ -1376,7 +1221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_reconciliation/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_reconciliation/" class="md-nav__link">
         
   
   
@@ -1399,7 +1244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_learn/" class="md-nav__link">
+      <a href="../../../../react/react_docs/react_learn/" class="md-nav__link">
         
   
   
@@ -1422,7 +1267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../technical_topics/" class="md-nav__link">
+      <a href="../../../../react/react_docs/technical_topics/" class="md-nav__link">
         
   
   
@@ -1445,7 +1290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../behavioral_questions/" class="md-nav__link">
+      <a href="../../../../react/react_docs/behavioral_questions/" class="md-nav__link">
         
   
   
@@ -1516,7 +1361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../node/" class="md-nav__link">
+      <a href="../../../../node/" class="md-nav__link">
         
   
   
@@ -1539,7 +1384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../node/node_questions/" class="md-nav__link">
+      <a href="../../../../node/node_questions/" class="md-nav__link">
         
   
   
@@ -1566,24 +1411,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -1596,7 +1446,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Python
@@ -1610,7 +1460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -1633,7 +1483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/basic_concepts/" class="md-nav__link">
+      <a href="../../basic_concepts/" class="md-nav__link">
         
   
   
@@ -1656,7 +1506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/oops/" class="md-nav__link">
+      <a href="../../oops/" class="md-nav__link">
         
   
   
@@ -1679,7 +1529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/python_fundamentals/" class="md-nav__link">
+      <a href="../../python_fundamentals/" class="md-nav__link">
         
   
   
@@ -1702,7 +1552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/data_structure/" class="md-nav__link">
+      <a href="../../data_structure/" class="md-nav__link">
         
   
   
@@ -1725,7 +1575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/algorithms/" class="md-nav__link">
+      <a href="../../algorithms/" class="md-nav__link">
         
   
   
@@ -1745,6 +1595,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1755,11 +1607,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" checked>
         
           
           <label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
@@ -1775,7 +1627,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_7">
             <span class="md-nav__icon md-icon"></span>
             Advanced Concepts
@@ -1789,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/advanced_concepts/multithreading/" class="md-nav__link">
+      <a href="../multithreading/" class="md-nav__link">
         
   
   
@@ -1812,7 +1664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/advanced_concepts/multiprocessing/" class="md-nav__link">
+      <a href="../multiprocessing/" class="md-nav__link">
         
   
   
@@ -1835,7 +1687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/advanced_concepts/asyncio/" class="md-nav__link">
+      <a href="../asyncio/" class="md-nav__link">
         
   
   
@@ -1858,7 +1710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/advanced_concepts/memory_management/" class="md-nav__link">
+      <a href="../memory_management/" class="md-nav__link">
         
   
   
@@ -1881,7 +1733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/advanced_concepts/iterators/" class="md-nav__link">
+      <a href="../iterators/" class="md-nav__link">
         
   
   
@@ -1904,7 +1756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/advanced_concepts/generators/" class="md-nav__link">
+      <a href="../generators/" class="md-nav__link">
         
   
   
@@ -1927,7 +1779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/advanced_concepts/decorators/" class="md-nav__link">
+      <a href="../decorators/" class="md-nav__link">
         
   
   
@@ -1950,7 +1802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/advanced_concepts/context_managers/" class="md-nav__link">
+      <a href="../context_managers/" class="md-nav__link">
         
   
   
@@ -1973,7 +1825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/advanced_concepts/metaclasses/" class="md-nav__link">
+      <a href="../metaclasses/" class="md-nav__link">
         
   
   
@@ -1996,7 +1848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/advanced_concepts/caching/" class="md-nav__link">
+      <a href="../caching/" class="md-nav__link">
         
   
   
@@ -2016,10 +1868,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../python/python_docs/advanced_concepts/dunder_methods/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Dunder Methods
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2030,6 +1904,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#common-dunder-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Dunder Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2050,7 +1971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../python/python_docs/fast-api/" class="md-nav__link">
+      <a href="../../fast-api/" class="md-nav__link">
         
   
   
@@ -2121,7 +2042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/" class="md-nav__link">
+      <a href="../../../../database/" class="md-nav__link">
         
   
   
@@ -2185,7 +2106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/joins/" class="md-nav__link">
+      <a href="../../../../database/joins/" class="md-nav__link">
         
   
   
@@ -2208,7 +2129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/db_concepts/" class="md-nav__link">
+      <a href="../../../../database/db_concepts/" class="md-nav__link">
         
   
   
@@ -2280,7 +2201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/nosql_concepts/" class="md-nav__link">
+      <a href="../../../../database/nosql_concepts/" class="md-nav__link">
         
   
   
@@ -2311,7 +2232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../database/db_optimization/" class="md-nav__link">
+      <a href="../../../../database/db_optimization/" class="md-nav__link">
         
   
   
@@ -2382,7 +2303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../general/" class="md-nav__link">
+      <a href="../../../../general/" class="md-nav__link">
         
   
   
@@ -2405,7 +2326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../general/auth/" class="md-nav__link">
+      <a href="../../../../general/auth/" class="md-nav__link">
         
   
   
@@ -2428,7 +2349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../general/sockets/" class="md-nav__link">
+      <a href="../../../../general/sockets/" class="md-nav__link">
         
   
   
@@ -2451,7 +2372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../general/security_best_practices/" class="md-nav__link">
+      <a href="../../../../general/security_best_practices/" class="md-nav__link">
         
   
   
@@ -2474,7 +2395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../general/middleware/" class="md-nav__link">
+      <a href="../../../../general/middleware/" class="md-nav__link">
         
   
   
@@ -2497,7 +2418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../general/caching/" class="md-nav__link">
+      <a href="../../../../general/caching/" class="md-nav__link">
         
   
   
@@ -2520,7 +2441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../general/load_balancing/" class="md-nav__link">
+      <a href="../../../../general/load_balancing/" class="md-nav__link">
         
   
   
@@ -2591,7 +2512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design_patterns/" class="md-nav__link">
+      <a href="../../../../design_patterns/" class="md-nav__link">
         
   
   
@@ -2655,7 +2576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design_patterns/real_time_patterns/api_gateway_pattern/" class="md-nav__link">
+      <a href="../../../../design_patterns/real_time_patterns/api_gateway_pattern/" class="md-nav__link">
         
   
   
@@ -2678,7 +2599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design_patterns/real_time_patterns/dependancy_injection_pattern/" class="md-nav__link">
+      <a href="../../../../design_patterns/real_time_patterns/dependancy_injection_pattern/" class="md-nav__link">
         
   
   
@@ -2701,7 +2622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design_patterns/real_time_patterns/factory_pattern/" class="md-nav__link">
+      <a href="../../../../design_patterns/real_time_patterns/factory_pattern/" class="md-nav__link">
         
   
   
@@ -2724,7 +2645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design_patterns/real_time_patterns/rule_engine_pattern/" class="md-nav__link">
+      <a href="../../../../design_patterns/real_time_patterns/rule_engine_pattern/" class="md-nav__link">
         
   
   
@@ -2747,7 +2668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design_patterns/real_time_patterns/template_method_pattern/" class="md-nav__link">
+      <a href="../../../../design_patterns/real_time_patterns/template_method_pattern/" class="md-nav__link">
         
   
   
@@ -2770,7 +2691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design_patterns/real_time_patterns/transformer_pattern/" class="md-nav__link">
+      <a href="../../../../design_patterns/real_time_patterns/transformer_pattern/" class="md-nav__link">
         
   
   
@@ -2793,7 +2714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../design_patterns/real_time_patterns/resolver_pattern/" class="md-nav__link">
+      <a href="../../../../design_patterns/real_time_patterns/resolver_pattern/" class="md-nav__link">
         
   
   
@@ -2851,25 +2772,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-use-code-splitting" class="md-nav__link">
+  <a href="#common-dunder-methods" class="md-nav__link">
     <span class="md-ellipsis">
-      Why Use Code Splitting?
+      Common Dunder Methods
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#react-code-splitting-with-reactlazy" class="md-nav__link">
-    <span class="md-ellipsis">
-      React Code Splitting with React.lazy
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="React Code Splitting with React.lazy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example
@@ -2877,82 +2788,11 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#key-points" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Points:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
-  <a href="#code-splitting-with-import" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Code Splitting with import()
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Code Splitting with import()">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tools-for-code-splitting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tools for Code Splitting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tools for Code Splitting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-with-react-router" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example with React Router
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best Practices
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
+      Usage
     </span>
   </a>
   
@@ -2974,83 +2814,39 @@
 
 
 
-<h1 id="react-code-splitting">React Code Splitting</h1>
-<p>Code splitting is a technique in React that allows you to split your code into smaller bundles, which can be loaded on demand. This helps improve the performance of your application by reducing the initial load time.</p>
-<h2 id="why-use-code-splitting">Why Use Code Splitting?</h2>
+<h1 id="dunder-methods-in-python">Dunder Methods in Python</h1>
+<p>Dunder methods, also known as "magic methods" or "special methods," are methods with double underscores (<code>__</code>) before and after their names. They enable the customization of class behavior for built-in operations such as arithmetic, comparison, string representation, and more.</p>
+<h2 id="common-dunder-methods">Common Dunder Methods</h2>
 <ul>
-<li><strong>Improved Performance</strong>: Load only the code required for the current view.</li>
-<li><strong>Faster Initial Load</strong>: Reduce the size of the initial JavaScript bundle.</li>
-<li><strong>Lazy Loading</strong>: Load components or modules only when needed.</li>
+<li><code>__init__(self, ...)</code>: Object initializer (constructor).</li>
+<li><code>__str__(self)</code>: String representation for <code>str()</code>.</li>
+<li><code>__repr__(self)</code>: Official string representation for <code>repr()</code>.</li>
+<li><code>__add__(self, other)</code>: Addition operator (<code>+</code>).</li>
+<li><code>__eq__(self, other)</code>: Equality comparison (<code>==</code>).</li>
+<li><code>__len__(self)</code>: Length of the object (<code>len()</code>).</li>
+<li><code>__getitem__(self, key)</code>: Indexing (<code>obj[key]</code>).</li>
+<li><code>__setitem__(self, key, value)</code>: Item assignment (<code>obj[key] = value</code>).</li>
+<li><code>__call__(self, ...)</code>: Makes an instance callable like a function.</li>
 </ul>
-<h2 id="react-code-splitting-with-reactlazy">React Code Splitting with <code>React.lazy</code></h2>
-<p>React provides the <code>React.lazy</code> function to enable code splitting at the component level.</p>
-<h3 id="example">Example</h3>
-<pre><code class="language-jsx">import React, { Suspense } from 'react';
+<h2 id="example">Example</h2>
+<pre><code class="language-python">class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
-const LazyComponent = React.lazy(() =&gt; import('./LazyComponent'));
+    def __str__(self):
+        return f&quot;Point({self.x}, {self.y})&quot;
 
-function App() {
-    return (
-        &lt;div&gt;
-            &lt;Suspense fallback={&lt;div&gt;Loading...&lt;/div&gt;}&gt;
-                &lt;LazyComponent /&gt;
-            &lt;/Suspense&gt;
-        &lt;/div&gt;
-    );
-}
+    def __add__(self, other):
+        return Point(self.x + other.x, self.y + other.y)
 
-export default App;
+p1 = Point(1, 2)
+p2 = Point(3, 4)
+print(p1 + p2)  # Output: Point(4, 6)
 </code></pre>
-<h3 id="key-points">Key Points:</h3>
-<ul>
-<li><strong><code>React.lazy</code></strong>: Dynamically imports a component.</li>
-<li><strong><code>Suspense</code></strong>: Displays a fallback UI while the lazy-loaded component is being fetched.</li>
-</ul>
-<h2 id="code-splitting-with-import">Code Splitting with <code>import()</code></h2>
-<p>You can also use dynamic <code>import()</code> for splitting non-component code.</p>
-<h3 id="example_1">Example</h3>
-<pre><code class="language-javascript">function loadUtility() {
-    import('./utility').then((module) =&gt; {
-        const utility = module.default;
-        utility.doSomething();
-    });
-}
-</code></pre>
-<h2 id="tools-for-code-splitting">Tools for Code Splitting</h2>
-<ul>
-<li><strong>Webpack</strong>: Automatically splits code into chunks.</li>
-<li><strong>React Router</strong>: Supports lazy loading routes with <code>React.lazy</code>.</li>
-</ul>
-<h3 id="example-with-react-router">Example with React Router</h3>
-<pre><code class="language-jsx">import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-const Home = React.lazy(() =&gt; import('./Home'));
-const About = React.lazy(() =&gt; import('./About'));
-
-function App() {
-    return (
-        &lt;Router&gt;
-            &lt;Suspense fallback={&lt;div&gt;Loading...&lt;/div&gt;}&gt;
-                &lt;Switch&gt;
-                    &lt;Route exact path=&quot;/&quot; component={Home} /&gt;
-                    &lt;Route path=&quot;/about&quot; component={About} /&gt;
-                &lt;/Switch&gt;
-            &lt;/Suspense&gt;
-        &lt;/Router&gt;
-    );
-}
-
-export default App;
-</code></pre>
-<h2 id="best-practices">Best Practices</h2>
-<ul>
-<li>Use code splitting for large components or libraries.</li>
-<li>Always provide a fallback UI with <code>Suspense</code>.</li>
-<li>Test lazy-loaded components to ensure they work as expected.</li>
-</ul>
-<h2 id="conclusion">Conclusion</h2>
-<p>Code splitting is a powerful optimization technique in React that enhances performance and user experience. By leveraging tools like <code>React.lazy</code> and <code>import()</code>, you can efficiently manage your application's codebase.</p>
+<h2 id="usage">Usage</h2>
+<p>Dunder methods allow your classes to interact seamlessly with Python's built-in functions and operators, making your custom objects behave more like native types.</p>
+<p><strong>Note:</strong> Avoid creating your own dunder methods with names not defined by Python's data model.</p>
 
 
 
@@ -3099,10 +2895,10 @@ export default App;
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
